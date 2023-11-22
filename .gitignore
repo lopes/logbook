@@ -1,0 +1,8 @@
+# zola trash
+zola
+public
+static/processed_images
+
+# system trash
+.DS_Store
+.vscode/
