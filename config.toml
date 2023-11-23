@@ -34,8 +34,8 @@ extra_syntaxes_and_themes = []
 [extra.profile]
 name          = "José Lopes"
 bio           = "Infosec Engineer working with Threat Detection, boldly following his own journey."
-avatar_url    = "./icons/github.svg"
-avatar_invert = true
+avatar_url    = "./images/avatar-lopes.png"
+avatar_invert = false
 
 [[extra.profile.social]]
 name = "github"
