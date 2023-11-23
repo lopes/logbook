@@ -13,7 +13,7 @@ tags = ["security", "threatdetection", "siem", "networking", "logging"]
 ## Scans
 It is important to keep in mind that there are at least three types of scans: **network scans**, **port scans**, and **vulnerability scans**. Network scans aim to identify active hosts within the network, while port scans attempt to determine open ports for each host, indicating the services running on those machines.  Vulnerability scans can be used to discover the applications utilizing these ports and potentially identify vulnerabilities for further exploitation.
 
-Although other scans, such as SSH port scans, exist, they are highly specific and typically require particular monitoring rules.  For the purpose of this discussion, the focus will be on <mark>**network and port scans**</mark>.  Many people mistakenly mix them (network and port scans) in detection rules, leading to numerous false positives or, worse, false negatives.
+Although other scans, such as SSH port scans, exist, they are highly specific and typically require particular monitoring rules.  For the purpose of this discussion, the focus will be on <mark>network and port scans</mark>.  Many people mistakenly mix them (network and port scans) in detection rules, leading to numerous false positives or, worse, false negatives.
 
 Here are some key differences between them:
 

@@ -7,6 +7,10 @@ description = "Learn how to export and decode GAuth 2FA accounts to retrieve the
 tags = ["security"]
 +++
 
+{% admonition(type="info", title="Update") %}
+2023-11-23: GAuth now syncs user's MFA data with Google Cloud, so there's no reason to use it anymore.  While the synchronization may not be optimal for security, following the steps outlined in this post could lead to even greater vulnerabilities.
+{% end %}
+
 Google Authenticator (GAuth) is a simple and useful app to deal with 2FA, but its simplicity comes at a cost: If you got your device stolen or kind of it, then you lose access to the accounts stored there, unless you have other means to access the accounts, like keywords or authentication through email.
 
 GAuth does not provide easy ways to backup its contents, on the contrary: It makes difficult to export data, but it can be accomplished and this text explains how to do it instead of having to enroll the 2FA for those accounts again.
@@ -15,7 +19,7 @@ GAuth does not provide easy ways to backup its contents, on the contrary: It mak
 ## GAuth
 The first thing to do here is to access the GAuth app and extract the accounts enrolled.  Start by exporting the accounts through: `Options > Transfer Accounts > Export Accounts`.  GAuth will require the credentials, and after that, select all accounts and click on `Next`.
 
-As said previously, GAuth does not provide an easy way to migrate accounts, so here it's necessary to use a workaround: Using a <mark>**trusted**</mark> device, scan the QR code using any <mark>**trusted**</mark> app.  This QR code has all credentials encoded, so after scanning it, copy the chunk of characters and paste them into a plain text file on your <mark>**trusted**</mark> machine --let's call it `dump.txt` for instance.  This chunk will look like this:
+As said previously, GAuth does not provide an easy way to migrate accounts, so here it's necessary to use a workaround: Using a <mark>trusted</mark> device, scan the QR code using any <mark>trusted</mark> app.  This QR code has all credentials encoded, so after scanning it, copy the chunk of characters and paste them into a plain text file on your <mark>trusted</mark> machine --let's call it `dump.txt` for instance.  This chunk will look like this:
 
 ```
 otpauth-migration://offline?data=ijEK4ngAIPwDm0BZuqJk6Qvmbi2NpqyAkEgl...
@@ -45,4 +49,4 @@ If everything worked as expected, the account list will be shown on the screen, 
 - **Issuer**: The service provider
 - **Type**: Type of algorithm, usually TOTP
 
-From now, just copy-and-paste the secrets in the new app, so it'll be able to generate the OTPs valid to each service.  I highly recommend everyone to <mark>**test**</mark> all accounts before removing GAuth.  Also, make sure to <mark>**delete**</mark> all evidences GAuth data in the machine, like the file with the QR code data and any picture of the QR code itself: Remember that if this data leaks, your security will be severely compromised.
+From now, just copy-and-paste the secrets in the new app, so it'll be able to generate the OTPs valid to each service.  I highly recommend everyone to <mark>test</mark> all accounts before removing GAuth.  Also, make sure to <mark>delete</mark> all evidences GAuth data in the machine, like the file with the QR code data and any picture of the QR code itself: Remember that if this data leaks, your security will be severely compromised.
