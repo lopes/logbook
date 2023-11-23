@@ -3,6 +3,8 @@ Lopes' Logbook, home for [lopes.id](https://lopes.id).  Proudly built with [Zola
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1e2af009-2a44-4144-a435-1f032fd6c1f8/deploy-status)](https://app.netlify.com/sites/lopes/deploys)
 
+This project succeeded the `lopes/anchor` in 2023-11-23 to better fit the idea of the blog in its name.  This migration also included a comprehensive review of the elements in the posts and a new theme, so I consider this the lopes.id v3.
+
 
 ## Updating
 1. Clone this repository
