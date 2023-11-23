@@ -36,7 +36,9 @@ sudo systemctl enable vboxservice.service
 
 In my tests the VirtualBox's video card was not able to dynamically set the video resolution, so I had to discover the one used in my system (1440x900), match it to the options provided by GRUB, and apply them in GRUB.
 
-> **Note**: To see a list of GRUB's available resolution options, type `control-c` while in GRUB screen and use the command `videoinfo` for GRUB EFI or `vbeinfo` for GRUB BIOS. 
+{% admonition(type="note", title="Note") %}
+To see a list of GRUB's available resolution options, type `control-c` while in GRUB screen and use the command `videoinfo` for GRUB EFI or `vbeinfo` for GRUB BIOS.
+{% end %}
 
 To apply the desired resolution, open the file `/etc/defaut/grub`, locate the option `GRUB_GFXMODE` and insert the resolution there.  In my case the result was: `GRUB_GFXMODE=1440x900x32`.
 
@@ -100,7 +102,9 @@ reboot
 startx
 ```
 
-> **Note**: To troubleshoot Picom, run the same command in i3 configuration file and pay attention to the error message.  Maybe you will have to disable some feature for instance `vsync`.
+{% admonition(type="note", title="Note") %}
+To troubleshoot Picom, run the same command in i3 configuration file and pay attention to the error message.  Maybe you will have to disable some feature for instance `vsync`.
+{% end %}
 
 ### Keyboard
 
@@ -133,7 +137,9 @@ systemd-analyze critical-chain
 systemd-analyze plot > /tmp/boot.png
 ```
 
-> **Note**: To monitor processes consuming power, a.k.a., draining the battery, you can use [powertop](https://wiki.archlinux.org/index.php/Powertop).
+{% admonition(type="note", title="Note") %}
+To monitor processes consuming power, a.k.a., draining the battery, you can use [powertop](https://wiki.archlinux.org/index.php/Powertop).
+{% end %}
 
 
 ## To be Continued...

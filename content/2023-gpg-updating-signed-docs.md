@@ -63,7 +63,9 @@ To make sure everything was OK, I checked manually some files to ensure the sign
 gpg --verify path/to/folder/br/filename.txt
 ```
 
-> **Note**: The `--clearsign` option creates a new file (`.asc`) based on the content of the original file.  If both files (the original and the `.asc` files) are in the same directory while verifying the signature, then a warning will be appended to the verification message, stating that the file was not verified.  To avoid this message, rename the `.asc` file or remove the unsigned file from the folder and the warning [should disappear](https://www.redhat.com/sysadmin/digital-signatures-gnupg).
+{% admonition(type="note", title="Note") %}
+The `--clearsign` option creates a new file (`.asc`) based on the content of the original file.  If both files (the original and the `.asc` files) are in the same directory while verifying the signature, then a warning will be appended to the verification message, stating that the file was not verified.  To avoid this message, rename the `.asc` file or remove the unsigned file from the folder and the warning [should disappear](https://www.redhat.com/sysadmin/digital-signatures-gnupg).
+{% end %}
 
 
 ### Publishing

@@ -48,6 +48,6 @@ In this case, the locale will always be `en_US` because we can't change that in 
 =importdata("https://cryptoprices.cc/LINK/";;"en_US") * googlefinance("USDBRL")
 ```
 
-> Translation: Get the Chainlink price in US Dollar from Crypto Prices (remember it'll come in en_US locale), and multiply it by the Brazilian Real value in front of US Dollar, so I'll get the Chainlink quotation in BRL in my Brazilian spreadsheet.
+Translation: Get the Chainlink price in US Dollar from Crypto Prices (remember it'll come in en_US locale), and multiply it by the Brazilian Real value in front of US Dollar, so I'll get the Chainlink quotation in BRL in my Brazilian spreadsheet.
 
 That's it!

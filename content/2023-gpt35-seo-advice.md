@@ -11,9 +11,10 @@ ChatGPT is a buzzword nowadays.  Suddenly, everyone was talking about it and the
 
 Cut to March 6th, 2023.  I was reading some news when I stumbled upon [this post](https://medium.com/geekculture/a-paper-summarizer-with-python-and-gpt-3-2c718bc3bc88) from 2021 teaching how to use GPT-3 (not 3.5) to summarize scientific papers and, as a blogger, I thought: Why not using it to summarize my posts with SEO techniques?  Right in my first mock-ups, I expanded the idea for all fields I need to fill in every post: Title, summary, and tags.  That's how I started the [Hakspek project](https://github.com/lopes/hakspek).
 
-> **Disclaimers**:
->  - being able to use GPT does not make me an AI expert, so this text is from an amateur perspective.
->  - I used ChatGPT to help me write some parts of this document, of course.
+{% admonition(type="info", title="Disclaimers") %}
+- Being able to use GPT does not make me an AI expert, so this text is from an amateur perspective.
+- I used ChatGPT to help me write some parts of this document, of course.
+{% end %}
 
 
 ## Coding

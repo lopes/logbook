@@ -3,11 +3,9 @@ title = "About"
 path = "about"
 +++
 
-Hello there!  I'm **José Lopes**, the creator of this blog, and I'm thrilled to have you here.  This blog is my little corner of the internet where I share my passions and interests. It's not just a personal repository but also a place for like-minded individuals to connect and explore together.
+Captain's Log.  José Lopes here, charting the course of this digital frontier.  Welcome aboard!  This blog is my cybernetic log, a transmission from the heart of the internet where I document my passions and ventures.  It's not just a personal record but a shared space for kindred spirits to join this cosmic exploration.
 
-With a background in Information Technology spanning several years, I'm absolutely enamored by this field.  That's why you'll find it as a recurring theme here (hehe): programming, information security, computers, and more.  But my interests go beyond the digital world; I'm also passionate about finance, biology, ecology, movies, music, beer, and so much more.
-
-In keeping with the [KISS](https://en.wikipedia.org/wiki/KISS_principle) principle (Keep It Simple, Stupid), I've kept this space commentary-free to maintain a clean and efficient experience.  If you'd like to engage with me or discuss any of the topics, feel free to connect with me on one of my social media profiles. Let's explore the world of technology and beyond together!
+I find myself captivated by the realms of Information Security, programming, and the intricate dance of computers.  Yet, the narrative goes beyond the digital frontier.  My fervor extends to finance, biology, ecology, the art of cinema, the symphony of music, the taste of fine beer, and a myriad of other interests.  Boldly going where curiosity leads.
 
 
 ## Talks

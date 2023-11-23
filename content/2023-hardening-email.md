@@ -31,7 +31,9 @@ Sender Policy Framework (SPF, [RFC 7208](https://datatracker.ietf.org/doc/html/r
 
 A `softfail` here can be considered a middle ground between failure and neutrality, which is useful when an organization is gradually adopting SPF.
 
-> **Important**: It is not allowed to have multiple SPF records as the receiving mail server won't know which SPF rules to follow.
+{% admonition(type="warning", title="Warning") %}
+It is not allowed to have multiple SPF records as the receiving mail server won't know which SPF rules to follow.
+{% end %}
 
 
 ## DMARC

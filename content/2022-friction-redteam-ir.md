@@ -9,7 +9,9 @@ tags = ["security", "csirt"]
 
 I've been working with the incident response (IR) for a few years and more recently when [Red Teams](https://csrc.nist.gov/glossary/term/red_team) (RTs) started trending, I experienced some avoidable friction between both teams I wanted to share.
 
-> **Disclaimer**: This text is based on my own experience and may not reflect the whole scenario of Cybersecurity.  Readers can feel free to send feedback and share experiences.
+{% admonition(type="info", title="Disclaimer") %}
+This text is based on my own experience and may not reflect the whole scenario of Cybersecurity.  Readers can feel free to send feedback and share experiences.
+{% end %}
 
 Analyzing past situations, I divide the RTs into three categories, based on the expertise of their members:
 
@@ -64,6 +66,6 @@ For me, only in this scenario, the RT could operate without the other security t
 
 In this vanity war, the RT members always have a good advantage, because they choose the time (usually the best for them) no matter if they were blocked 99 times.  If they succeed only once, that's enough for applause.
 
-All security teams are important and only management with a security background can understand that and put them to work together in favor of true cybersecurity.  For Sun Tzu aficionados, remember: [the *Art of War* is actually a manual on how to avoid it](https://lithub.com/the-art-of-war-is-actually-a-manual-on-how-to-avoid-it/).
+All security teams are important and only management with a security background can understand that and put them to work together in favor of true cybersecurity.  For Sun Tzu aficionados, remember: [The *Art of War* is actually a manual on how to avoid it](https://lithub.com/the-art-of-war-is-actually-a-manual-on-how-to-avoid-it/).
 
 Peace.

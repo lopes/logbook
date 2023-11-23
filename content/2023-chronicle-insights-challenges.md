@@ -12,7 +12,9 @@ image = "images/logos/google-chronicle.png"
 
 I've been using Chronicle SIEM for approximately six months now, and while reviewing my notes from this period, I've decided to compile everything into a blog post.  In this post, I aim to share my personal highlights of the tool and provide insights into areas where there's room for improvement.  Since there's limited information available about this relatively new system on the internet, I hope this post can be of help to others embarking on their own Chronicle SIEM journey.
 
-> **Important Note**: It's worth noting that my overall perception is that Chronicle SIEM is a system in active development.  Over the course of these six months, I've witnessed features being added overnight and subtle changes in the User Interface.  As a result, some of the insights I share here may evolve as the system matures.
+{% admonition(type="note", title="Note") %}
+It's worth noting that my overall perception is that Chronicle SIEM is a system in active development.  Over the course of these six months, I've witnessed features being added overnight and subtle changes in the User Interface.  As a result, some of the insights I share here may evolve as the system matures.
+{% end %}
 
 ![Chronicle SIEM logo](/images/logos/google-chronicle.png "Chronicle SIEM logo: A stylized C followed by the word Chronicle.")
 
@@ -71,7 +73,9 @@ Once important fields have been extracted from the logs and properly normalized,
     - `network.session_id`: Network session ID.
     - `network.http.*`: HTTP information.
 
-> **Note**: UDM fields represent raw log data.  Therefore, not all fields from the raw log will necessarily be present in the UDM representation.  However, some additional fields may be present, sourced from enrichment subsystems, to provide better context for events.
+{% admonition(type="note", title="Note") %}
+UDM fields represent raw log data.  Therefore, not all fields from the raw log will necessarily be present in the UDM representation.  However, some additional fields may be present, sourced from enrichment subsystems, to provide better context for events.
+{% end %}
 
 All these steps take place within the parser configuration, except for enrichments, which are added later.  After this process, Chronicle SIEM retains the untouched raw log (important for compliance) and the associated UDM (crucial for searching and detection).
 
@@ -110,11 +114,15 @@ This rule comprises well-defined sections:
 - `match`: Values to return when matches are found.
 - `condition`: A condition to check events and the variables used to find matches.
 
-> I don't prefer placing a placeholder on the right side of an assertion (L9-L10), but you can invert it with the same results.
+{% admonition(type="info", title="Info") %}
+I don't prefer placing a placeholder on the right side of an assertion (L9-L10), but you can invert it with the same results.
+{% end %}
 
 In this particular example, the rule tracks network connection logs, monitoring each unique destination IP and destination port for 10 minutes.  If more than 50 ports are accessed by a single IP address, the rule triggers.
 
-> **Note**: This rule is provided as an example to illustrate the structure of YARA-L, and I'm not evaluating its effectiveness here.
+{% admonition(type="note", title="Note") %}
+This rule is provided as an example to illustrate the structure of YARA-L, and I'm not evaluating its effectiveness here.
+{% end %}
 
 While these are the most important sections of YARA-L, the language encompasses other sections.  Here's the complete structure:
 

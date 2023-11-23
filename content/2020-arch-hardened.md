@@ -160,7 +160,9 @@ mount /dev/mapper/vg0-var /mnt/var
 ## Installation
 At this point, the disk should be ready to receive the system's files.  To do it, `pacman` will be used, but since it comes with a lot of repositories and many of them could perform really bad for some users, it is recommended to allow only the nearest from the user.  I use two simple commands to discard all repositories but the ones in the countries I selected:
 
-> **UPDATE 2021-10-26**: This step failed when I installed Arch today because the mirrorlist file format changed, but it can be **avoided** without further problems.
+{% admonition(type="info", title="Update") %}
+2021-10-26: This step failed when I installed Arch today because the mirrorlist file format changed, but it can be **avoided** without further problems.
+{% end %}
 
 ```sh
 cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bkp
@@ -267,7 +269,9 @@ Enable the service so it will run after rebooting the system.
 systemctl enable systemd-networkd.service
 ```
 
-> **Update 2021-10-26**: [Cloudflare](https://1.1.1.1/)'s DNS is a better option: `1.1.1.1` and `1.0.0.1` than Google's.
+{% admonition(type="info", title="Update") %}
+2021-10-26: [Cloudflare](https://1.1.1.1/)'s DNS is a better option: `1.1.1.1` and `1.0.0.1` than Google's.
+{% end %}
 
 Add Google DNSs in `/etc/resolv.conf`.
 

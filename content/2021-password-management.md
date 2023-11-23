@@ -7,6 +7,10 @@ description = "Learn to manage your passwords and MFA tools to maximize security
 tags = ["security"]
 +++
 
+{% admonition(type="info", title="Update") %}
+2023-11-23: Google Authenticator (GAuth) now syncs data with the cloud, allowing its users to recover MFA data if they get their devices lost.  This completely changes the approch showed here to handle GAuth backups, but it also poses a vulnerability since each factor of the MFA should be independent from each other (what you have, the GAuth data is being secured by what you know, your Google Passwords).
+{% end %}
+
 Keeping credentials secure is key for good security architecture, but since there are lots of technologies to help users achieving that, most people do not know how to correctly use them.  In this text, I am going to expose my way of managing passwords and [Multi-factor Authentication (MFA)](https://en.wikipedia.org/wiki/Multi-factor_authentication) tools to keep my access both secure and easy to use, while maintaining a certain level of resilience in case of losing a key device or password.
 
 
@@ -26,7 +30,9 @@ This way, making use of a [password manager (PM)](https://en.wikipedia.org/wiki/
 - Special characters
 - Never reuse passwords between applications
 
-> Since the passwords are randomly generated, they are not usually susceptible to dictionary attacks.
+{% admonition(type="note", title="Note") %}
+Since the passwords are randomly generated, they are not usually susceptible to dictionary attacks.
+{% end %}
 
 While using a PM is a good idea, keeping a secure backup of the passwords database is essential if the PM is unaccessible, but this backup must be cryptographically secure and the user must not depend on the PM itself to recover the PM's backup decryption password.  Still, users will have to create and remember two passwords:
 
@@ -35,7 +41,7 @@ While using a PM is a good idea, keeping a secure backup of the passwords databa
 
 The best practice here is to think in a passphrase, add numbers and special characters, and make sure the final result is easy to remember.  Although the passwords should be easy to remember, the users should not trust in their memories, so they should write down both passwords on a piece of paper and keep it in a secure, yet easy to access place.
 
-{% admonition(type="tip", title="Tip") %}
+{% admonition(type="tip", title="Pro Tip") %}
 Use absurd thoughts and characters combinations to create secure passphrases, like `K1d_M@mb0_Jung!3`, `B3st**!n**Pe4ce`, and `H4ir%oh%da%D0g`.
 {% end %}
 
@@ -45,7 +51,9 @@ Since everyone has many accounts with passwords spread over the internet, none o
 ## MFA
 MFA should be enabled for every critical service to provide a better level of security.  In a perfect world, all accounts would have the MFA enabled, but this requires a lot of effort and since the PM is generating and managing secure passwords (strong and unrepeated), the risk is mitigated for non-critical services.
 
-> In this scheme, the PM is a critical service and the cloud storage where the PM's backup is kept is also critical, so both of them should have the MFA enabled.
+{% admonition(type="note", title="Note") %}
+In this scheme, the PM is a critical service and the cloud storage where the PM's backup is kept is also critical, so both of them should have the MFA enabled.
+{% end %}
 
 MFA can be achieved in some ways, for instance:
 
@@ -54,7 +62,9 @@ MFA can be achieved in some ways, for instance:
 - receiving a phone call with the [OTP](https://en.wikipedia.org/wiki/One-time_password)
 - sending email to a pre-defined address
 
-> Enabling more than one alternative of OTP is good practice here, so the risk of losing an account is reduced, but users must remember that this also elevates the criticality of a given service.  For instance, if an email address is set to receive OTPs, the access to this email should be hardened, although using MFA here could be disastrous.
+{% admonition(type="note", title="Note") %}
+Enabling more than one alternative of OTP is good practice here, so the risk of losing an account is reduced, but users must remember that this also elevates the criticality of a given service.  For instance, if an email address is set to receive OTPs, the access to this email should be hardened, although using MFA here could be disastrous.
+{% end %}
 
 A good application to manage TOTPs for MFA is [Google Authenticator (GAuth)](https://en.wikipedia.org/wiki/Google_Authenticator), but in its current version it works "ad-hoc".  In other words, it does not sync data or keep backups of any of the MFA codes in there.  The only option GAuth gives to the users is to export data to another device, but if the user gets his cellphone lost or stolen, he will not able to do that.  Fallback solutions must be in place to restore access to the service and they could include:
 
@@ -62,11 +72,15 @@ A good application to manage TOTPs for MFA is [Google Authenticator (GAuth)](htt
 - using a recovery code
 - backing up the OTP application
 
-> Recovery codes can be used only once, so after using one of the N codes provided, this code becomes invalid.  Users must make sure of generating new codes before using all available codes.
+{% admonition(type="note", title="Note") %}
+Recovery codes can be used only once, so after using one of the N codes provided, this code becomes invalid.  Users must make sure of generating new codes before using all available codes.
+{% end %}
 
 There is no consense among services on how to provide a fallback solution to MFA.  Some of them allow the users to see the private key for the TOTP, others allow users to take note of recovery codes, and others allow users of setting up other ways to receive the OTP.  But if the user has none of these options, the only thing left is to back up the content of GAuth, which is not trivial.
 
-> Other solutions such as [Microsoft Authenticator](https://www.microsoft.com/en-us/security/mobile-authenticator-app) and [Authy](https://authy.com/) provide ways of backing up data, but I prefer GAuth.
+{% admonition(type="note", title="Note") %}
+Other solutions such as [Microsoft Authenticator](https://www.microsoft.com/en-us/security/mobile-authenticator-app) and [Authy](https://authy.com/) provide ways of backing up data, but I prefer GAuth.
+{% end %}
 
 To backup GAuth data, the user must trick the application like he wanted to export GAuth's data, but instead of reading the generated QR code with another GAuth instance, the user will take a photo of the cellphone's screen (GAuth blocks screenshots while showing the QR code).  Needless to say, this must be done in a secure place and using trusted devices.
 

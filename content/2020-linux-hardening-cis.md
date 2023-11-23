@@ -89,7 +89,9 @@ ufw status
 journalctl -o verbose | grep -i ufw  # to see ufw logs
 ```
 
-> **Update 2021-10-26**: To see the firewall logs continuously as in `tail -f`, simply run `journalctl --follow | grep -i ufw`.
+{% admonition(type="info", title="Update") %}
+2021-10-26: To see the firewall logs continuously as in `tail -f`, simply run `journalctl --follow | grep -i ufw`.
+{% end %}
 
 
 ## PAM
@@ -111,7 +113,9 @@ password required pam_cracklib.so retry=3 minlen=14 difok=3 dcredit=-1 ucredit=-
 password required pam_unix.so     use_authtok sha512 shadow
 ```
 
-> **Update 2021-10-26**: Looks like `pam_tally2.so` [was dropped in `pam` v1.4.0](https://forum.endeavouros.com/t/watch-out-pam-1-4-0-may-require-manual-intervention-pam-tally-dropped/7141) so the next step **must** be ignored (tally configuration).
+{% admonition(type="info", title="Update") %}
+2021-10-26: Looks like `pam_tally2.so` [was dropped in `pam` v1.4.0](https://forum.endeavouros.com/t/watch-out-pam-1-4-0-may-require-manual-intervention-pam-tally-dropped/7141) so the next step **must** be ignored (tally configuration).
+{% end %}
 
 Open the `/etc/pam.d/system-login` file and edit --or comment-- the `pam_tally2.so` line changing that for the line shown in the next listing.
 
@@ -132,13 +136,17 @@ Since PAM drastically changes the login process, any mistake can make the system
 
 To audit login errors from a given user, use the command below.  If this user is blocked, you can release it by appending a `--reset` option in the same command.
 
-> **Update 2021-10-06**: Since [tally was dropped from `pam`](https://forum.endeavouros.com/t/watch-out-pam-1-4-0-may-require-manual-intervention-pam-tally-dropped/7141), the command below is not present in Arch anymore.
+{% admonition(type="info", title="Update") %}
+2021-10-06**: Since [tally was dropped from `pam`](https://forum.endeavouros.com/t/watch-out-pam-1-4-0-may-require-manual-intervention-pam-tally-dropped/7141), the command below is not present in Arch anymore.
+{% end %}
 
 ```sh
 pam_tally2 --user=root
 ```
 
-> **Warning**: If everything goes wrong, you will want to boot your system in recue mode to fix the things, so be sure you know how to do it.
+{% admonition(type="warning", title="Warning") %}
+If everything goes wrong, you will want to boot your system in rescue mode to fix the things, so be sure you know how to do it.
+{% end %}
 
 
 ## Sudo

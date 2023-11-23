@@ -16,7 +16,9 @@ No fim de 2019, a empresa onde eu trabalho ofereceu um curso preparatório para 
 
 Não aproveitei muito o curso, pois eu não gosto do modelo tradicional de ensino.  Como cada um tem sua experiência e velocidade de aprendizagem, colocar todos numa sala, no mesmo ritmo, é contra-producente --sem contar que normalmente, como nesta certificação, quarenta horas não são suficientes para cobrir todo o conteúdo com os detalhes necessários.  Valeu mais pelo *voucher*.  O conteúdo do curso foi dado em português, mas as questões são criadas em inglês e, devido à qualidade de alguns simulados em português a que tive acesso, resolvi que estudaria e faria a prova em inglês.  Estávamos na última semana de novembro e eu fui audacioso, marcando a prova para três semanas depois, antes do Natal.  
 
-> Nota: A S+ é considerada uma prova de nível iniciante em segurança da informação, setor onde eu atuo desde 2013, então eu já estava familiarizado com muitos dos termos cobrados.
+{% admonition(type="note", title="Nota") %}
+A S+ é considerada uma prova de nível iniciante em segurança da informação, setor onde eu atuo desde 2013, então eu já estava familiarizado com muitos dos termos cobrados.
+{% end %}
 
 
 ## Estudo

@@ -54,7 +54,9 @@ For messages requiring future action, two approaches are employed:
 
 Periodically, a "Garbage Collector" filter deletes any unlabelled message older than 30 days.
 
-> **Notifications:** Email notifications can be a bit bothersome, but certain ones are crucial—like the "new sign-in alerts."  Given that the High-priority filter bypasses the Inbox, you might miss out on notifications for these important messages.  To address this, I recommend adjusting the settings in the Gmail app on my phone (`Gmail > Settings > [your email address] > Notifications > Manage Labels`).  Here, I enable syncing for the High priority label and turn on notifications for new messages in this category.  Additionally, I ensure that notifications for other labels, including the Inbox, are turned off.
+{% admonition(type="info", title="Notifications") %}
+Email notifications can be a bit bothersome, but certain ones are crucial—like the "new sign-in alerts."  Given that the High-priority filter bypasses the Inbox, you might miss out on notifications for these important messages.  To address this, I recommend adjusting the settings in the Gmail app on my phone (`Gmail > Settings > [your email address] > Notifications > Manage Labels`).  Here, I enable syncing for the High priority label and turn on notifications for new messages in this category.  Additionally, I ensure that notifications for other labels, including the Inbox, are turned off.
+{% end %}
 
 ### Instapaper
 [Instapaper](https://www.instapaper.com) serves as the destination for newsletters and interesting articles found during internet browsing.  It allows separation of reading time from browsing or mailing time and facilitates highlighting of text.  After reading, items are either deleted or archived based on their importance.
@@ -71,7 +73,9 @@ For more robust file management, I turn to Google Drive (GDrive).  I implement t
 ### Slack
 Used daily in my work, [Slack](https://slack.com/) can become overwhelming due to numerous channels.  Implementing a layered approach sorted by priority helps manage channels effectively. This approach consists of grouping the channels in many “layers” in priority order. In the end, I created eight layers, being the first one the most important (my team's channels) and the last ones the less important ones (channels used to track automatic updates from tools and deprecated yet not closed channels).  Also, the less important channels are muted to avoid interrupting me for useless updates.
 
-> **Important:** Muting less important channels prevents unnecessary interruptions.
+{% admonition(type="tip", title="Pro Tip") %}
+Muting less important channels prevents unnecessary interruptions.
+{% end %}
 
 
 ## Takeaways

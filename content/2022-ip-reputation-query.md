@@ -7,7 +7,7 @@ description = "Learn how to query three security services in one shell script to
 tags = ["unix", "security", "networking"]
 +++
 
-> **tl;dr**: Use [this script](https://gist.github.com/lopes/8bcb3294b3ede9a5e0da71ff64d8843a) to query three of the best security services on the internet about security-relevant data on IP addresses.
+**tl;dr**: Use [this script](https://gist.github.com/lopes/8bcb3294b3ede9a5e0da71ff64d8843a) to query three of the best security services on the internet about security-relevant data on IP addresses.
 
 It is common for Information Security Engineers to check if a given IP address is good or malicious and [maybe] that's why there are so many services around the web that provide such information.  Despite that, usually engineers stick with one or two of that services in their daily activities.  Three of the most common services I had contact was [the order does not matter]:
 
