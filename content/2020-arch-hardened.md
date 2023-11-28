@@ -14,7 +14,7 @@ I have decided to install Arch Linux on my next laptop but first had to test it 
 
 This text will consider the installation in a VirtualBox VM.
 
-![Arch Linux logo](/images/logos/archlinux.png "Arch Linux logo: Kindda blue triangle with the word archlinux below, in black and blue.")
+![Arch Linux logo](/images/logos/archlinux.png "Arch Linux logo: Kindda blue triangle with the word archlinux below, in black and blue")
 
 
 ## Installer Setup

@@ -17,7 +17,7 @@ The team should also define a pattern for the secret names and then create polic
 
 That said, as shown in the next figure, in this architecture the client asks the secret by its ID to SM that checks in IAM if that user has authozation to access the secret.  If yes, the secret itself is passed to client, which will be able to use it to authenticate in other tool to perform some action.
 
-![Authentication Architecture with AWS Secrets Manager](/images/diagram-aws-auth-secmgr.png "Sequence diagram showing how the architecture works.")
+![Authentication Architecture with AWS Secrets Manager](/images/diagram-aws-auth-secmgr.png "Sequence diagram showing how the architecture works")
 
 Secrets in SM can be stored as a single value or as key-value and that's what will be returned to the client, besides the payload, usually in JSON format.
 

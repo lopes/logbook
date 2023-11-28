@@ -12,7 +12,7 @@ image = "images/logos/aws-cert-sec.png"
 
 For the last few months I had been studying for the [AWS Certified Security - Specialty](https://aws.amazon.com/pt/certification/certified-security-specialty/) (SCS) certification and in this review, I am going to present every step I took to get this new certification in my career.
 
-![AWS Security Specialty badge](/images/logos/aws-cert-sec.png "AWS Security Specialty badge: A purple hexagon with AWS certification logo inside.")
+![AWS Security Specialty badge](/images/logos/aws-cert-sec.png "AWS Security Specialty badge: A purple hexagon with AWS certification logo inside")
 
 The SCS (a.k.a. Security Engineering on AWS) is an advanced certification in AWS career that focuses on the security aspects of AWS environment.  The test has 65 questions and the test taker must achieve at least 750 out of 1000 points to pass.
 The exam will test the knowledge in five different domains:

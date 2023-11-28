@@ -10,7 +10,7 @@ tags = ["security", "logging", "siem", "automation"]
 
 Automating tasks in Incident Response (IR) is key to reduce the impact of incidents. Although it seems as easy as start writing scripts, in my experience, this objective must be tackled in a more scalable and robust way that encompasses security, data science, and software development.
 
-![Breezing Up (A Fair Wind) by Winslow Homer, 1876](/images/paiting-breezing-up.png "Four boys sailing with an old man in a boat.")
+![Breezing Up (A Fair Wind) by Winslow Homer, 1876](/images/paiting-breezing-up.png "Four boys sailing with an old man in a boat")
 
 ## Stone Age: Path to SIEM
 
