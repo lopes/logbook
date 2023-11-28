@@ -4,7 +4,7 @@ date  = 2020-04-30
 description = "Descubra a importância das certificações na seleção de pessoal em TI."
 
 [taxonomies]
-tags = ["certification"]
+tags = ["career"]
 +++
 
 Seleção de pessoal é um assunto extenso e que eu não domino.  Há muito o que se considerar, entre a titulação, experiência e outros atributos, mas neste texto quero passar minha visão sobre o assunto, com foco nos títulos, já que é um assunto que vez ou outra aparece nas discussões de trabalho.

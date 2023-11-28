@@ -4,7 +4,7 @@ date  = 2021-08-24
 description = "Learn about the five domains and the materials used to pass the AWS Certified Security - Specialty exam."
 
 [taxonomies]
-tags = ["cloud", "aws", "security", "certification"]
+tags = ["cloud", "aws", "security", "career"]
 
 [extra]
 image = "images/logos/aws-cert-sec.png"

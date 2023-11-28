@@ -4,7 +4,7 @@ date  = 2020-11-05
 description = "Read about my experience getting the CISSP certification, from study strategies to material analysis."
 
 [taxonomies]
-tags = ["certification", "security", "review"]
+tags = ["career", "security", "review"]
 
 [extra]
 image = "images/logos/isc2-cissp.png"
