@@ -1,7 +1,7 @@
 +++
 title = "Aprendendo a Criar Sites Estáticos com Zola"
 date  = 2020-04-27
-description = "Descubra como o Zola, um construtor de sites estáticos escrito em Rust, pode ser uma ótima opção para criar e manter sites seguros e de alta performance."
+description = "Descubra como o Zola pode ser uma ótima opção para criar e manter sites seguros e de alta performance."
 
 [taxonomies]
 tags = ["blogging", "git", "zola"]

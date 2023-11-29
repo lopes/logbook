@@ -1,7 +1,7 @@
 +++
-title = "Effective Detection Rules for Network and Port Scans: Implementation Strategies"
+title = "Effective Detection Rules for Network and Port Scans"
 date  = 2023-05-30
-description = "Mastering Effective Network and Port Scan Detection: Strategies, Implementation, and Rule Creation for Optimal Security."
+description = "Mastering effective network and port scan detection: Strategies, implementation, and rule creation."
 
 [taxonomies]
 tags = ["security", "threatdetection", "siem", "networking", "logging"]
