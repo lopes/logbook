@@ -1,7 +1,7 @@
 +++
 title = "AWS Certified Security - Specialty Review"
 date  = 2021-08-24
-description = "Learn about the five domains and the materials used to pass the AWS Certified Security - Specialty exam."
+description = "The materials and strategy I used to get this certification."
 
 [taxonomies]
 tags = ["cloud", "aws", "security", "career"]

@@ -1,7 +1,7 @@
 +++
 title = "Hardening Email with DKIM, SPF, DMARC"
 date  = 2023-05-24
-description = "Boost email security: Learn how DKIM, SPF, and DMARC can protect your domain from cyber threats."
+description = "Learn how to protect your mailboxes from cyber threats."
 
 [taxonomies]
 tags = ["security"]

@@ -1,7 +1,7 @@
 +++
 title = "My Journey to CISSP Certification"
 date  = 2020-11-05
-description = "Read about my experience getting the CISSP certification, from study strategies to material analysis."
+description = "Mmy experience getting the CISSP certification."
 
 [taxonomies]
 tags = ["career", "security", "review"]

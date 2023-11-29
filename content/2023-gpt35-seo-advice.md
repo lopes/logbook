@@ -1,7 +1,7 @@
 +++
 title = "Using GPT-3.5 for SEO Advice"
 date  = 2023-03-17
-description = "A beginner's perspective on using OpenAI's GPT-3 to generate SEO-friendly post titles, summaries and tags."
+description = "Using OpenAI's GPT-3 to generate SEO-friendly post metadata."
 
 [taxonomies]
 tags = ["python", "blogging", "automation"]

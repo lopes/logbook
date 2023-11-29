@@ -1,7 +1,7 @@
 +++
 title = "Recovering from a PAM Misconfiguration in Arch Linux"
 date  = 2021-10-26
-description = "Misconfigured PAM modules could render systems inaccessible, but this tutorial explains how to recover without a reinstall."
+description = "How to recover Arch with a misconfigured PAM configuration."
 
 [taxonomies]
 tags = ["arch", "unix"]

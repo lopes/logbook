@@ -1,7 +1,7 @@
 +++
 title = "Using AWS Secrets Manager in Your Scripts"
 date  = 2023-01-05
-description = "Learn to authenticate in tools seamlessly and deal securely with your secrets in AWS Environment."
+description = "Learn to authenticate in tools seamlessly."
 
 [taxonomies]
 tags = ["security", "cloud", "aws"]

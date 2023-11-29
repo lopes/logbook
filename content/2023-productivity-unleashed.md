@@ -1,7 +1,7 @@
 +++
 title = "Productivity Unleashed"
 date  = 2023-11-14
-description = "Unlock seamless productivity with strategic tools and a 2-step system for efficient organization and focus."
+description = "Unlock seamless productivity with tools and a 2-step system for efficient organization."
 
 [taxonomies]
 tags = ["productivity"]

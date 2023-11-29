@@ -1,7 +1,7 @@
 +++
 title = "Logging Python Messages to Syslog in macOS"
 date  = 2021-08-17
-description = "Learn how to send log messages from Python to Syslog and monitor them in macOS using the log utility."
+description = "Send log messages from Python to Syslog in macOS."
 
 [taxonomies]
 tags = ["python", "logging", "unix", "syslog", "apple"]

@@ -1,7 +1,7 @@
 +++
 title = "Automating Network Management with NetBox Scanner"
 date  = 2020-05-31
-description = "Discover how an open-source IPAM tool and a custom-built scanner have streamlined network management."
+description = "Streamlining network management with IPAM and a network scanner."
 
 [taxonomies]
 tags = ["python", "git", "automation", "networking"]

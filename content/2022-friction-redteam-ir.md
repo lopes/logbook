@@ -1,7 +1,7 @@
 +++
 title = "Friction Between Red Teams and Incident Response"
 date  = 2022-10-04
-description = "Avoidable friction between cybersecurity teams during Red Team exercises causing stress and burnout."
+description = "Avoidable friction between cybersecurity teams during Red Team exercises."
 
 [taxonomies]
 tags = ["security", "csirt"]

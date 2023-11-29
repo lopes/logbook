@@ -1,7 +1,7 @@
 +++
 title = "Blogging and the Freedom of the Web"
 date  = 2020-06-09
-description = "Despite the rise of video tutorials, blogging remains a valuable platform for tech content sharing and personal growth."
+description = "Blogging remains a valuable platform for tech content."
 
 [taxonomies]
 tags = ["blogging"]

@@ -1,7 +1,7 @@
 +++
 title = "Export and Decode GAuth 2FA Accounts"
 date  = 2023-01-18
-description = "Learn how to export and decode GAuth 2FA accounts to retrieve the secrets and password data."
+description = "How to export and decode GAuth 2FA."
 
 [taxonomies]
 tags = ["security"]

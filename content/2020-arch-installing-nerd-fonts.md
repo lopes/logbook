@@ -1,7 +1,7 @@
 +++
 title = "Installing Nerd Fonts on Arch Linux"
 date = 2020-07-27
-description = "Learn how to install and use Nerd Fonts, a curated collection of fancy font families, focused on developers, on your Arch Linux system."
+description = "Learn how to install and use Nerd Fonts."
 
 [taxonomies]
 tags = ["unix", "arch"]

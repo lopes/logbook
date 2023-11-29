@@ -1,7 +1,7 @@
 +++
 title = "Portfolio Tracker: Mastering your Finances"
 date  = 2023-08-23
-description = "Enhance your portfolio management with this free, powerful spreadsheet —empowering investors to make informed decisions."
+description = "Enhance your portfolio management with this free and powerful spreadsheet."
 
 [taxonomies]
 tags = ["finance"]

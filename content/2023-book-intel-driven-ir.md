@@ -1,7 +1,7 @@
 +++
 title = "Intelligence-Driven Incident Response"
 date  = 2023-10-17
-description = "Discover how integrating CTI enhances Threat Detection and CSIRT for better cybersecurity results."
+description = "Discover how integrating CTI enhances Threat Detection and CSIRT."
 
 [taxonomies]
 tags = ["review", "security", "threatdetection"]

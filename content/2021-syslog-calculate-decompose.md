@@ -1,7 +1,7 @@
 +++
 title = "How to Calculate and Decompose Syslog Message Priority"
 date  = 2021-09-02
-description = "Learn how to calculate Syslog message priority and decompose it to troubleshoot current configuration."
+description = "Calculate and decompose Syslog message priority."
 
 [taxonomies]
 tags = ["logging", "syslog"]

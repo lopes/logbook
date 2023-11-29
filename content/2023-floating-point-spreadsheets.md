@@ -1,7 +1,7 @@
 +++
 title = "Handling Floating Point Precision in Spreadsheets"
 date  = 2023-06-30
-description = "Learn effective methods to handle floating point precision in spreadsheets, ensuring accurate financial calculations and avoiding errors."
+description = "Effective methods to handle floating point precision in spreadsheets."
 
 [taxonomies]
 tags = ["finance"]

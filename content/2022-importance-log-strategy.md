@@ -1,7 +1,7 @@
 +++
 title = "The Importance of Logging Strategy"
 date  = 2022-10-09
-description = "Logs are crucial tools for diagnosing incidents, but require streamlined planning and retention practices."
+description = "Streamlined planning and retention practices for better logging."
 
 [taxonomies]
 tags = ["security", "logging", "siem"]

@@ -1,7 +1,7 @@
 +++
 title = "Real-time Log Forwarding with Python and Syslog"
 date  = 2021-09-01
-description = "Learn how to create a smart log forwarding script using Python and Syslog to send logs in near real-time."
+description = "Create a smart log forwarding script using Python and Syslog."
 
 [taxonomies]
 tags = ["python", "logging", "unix", "syslog"]

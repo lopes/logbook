@@ -1,7 +1,7 @@
 +++
 title = "Chronicle SIEM: Insights and Challenges Explored"
 date  = 2023-09-23
-description = "Exploring Chronicle SIEM: Features, benefits, and challenges in a review centered around Threat Detection."
+description = "Features and challenges in a review centered around Threat Detection."
 
 [taxonomies]
 tags = ["logging", "siem", "security"]
