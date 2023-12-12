@@ -46,6 +46,10 @@ name = "linkedin"
 url = "https://www.linkedin.com/in/jlopesjr"
 
 [[extra.profile.social]]
+name = "twitter"
+url = "https://bsky.app/profile/lopes.id"
+
+[[extra.profile.social]]
 name = "rss"
 url  = "$BASE_URL/atom.xml"
 
