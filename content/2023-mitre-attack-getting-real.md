@@ -14,7 +14,7 @@ Now, let's dive into Infosec.  As per [Rapid7](https://www.rapid7.com/fundamenta
 
 Therefore, ATT&CK alone isn't a magic solution for your organization; it needs to be applied within a specific context to make sense and deliver tangible results.  Let's dig into this idea.
 
-![Threat Detection Radar](/images/threat-detection.gif "Green radar screen showing some detections")
+![Threat Detection Radar](/images/threat-detection-radar.gif "Green radar screen showing some detections")
 
 
 ## Implementation Insights
