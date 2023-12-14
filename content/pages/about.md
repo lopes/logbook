@@ -3,7 +3,7 @@ title = "About"
 path = "about"
 +++
 
-Captain's Log.  **José Lopes** here, charting the course of this digital frontier.  Welcome aboard!  This blog is my cybernetic log, a transmission from the heart of the internet where I document my passions and ventures.  It's not just a personal record but a shared space for kindred spirits to join this cosmic exploration.
+Captain's Log.  **Joe Lopes** here, charting the course of this digital frontier.  Welcome aboard!  This blog is my cybernetic log, a transmission from the heart of the internet where I document my passions and ventures.  It's not just a personal record but a shared space for kindred spirits to join this cosmic exploration.
 
 I find myself captivated by the realms of Information Security, programming, and the intricate dance of computers.  Yet, the narrative goes beyond the digital frontier.  My fervor extends to finance, biology, ecology, the art of cinema, the symphony of music, the taste of fine beer, and a myriad of other interests.  Boldly going where curiosity leads.
 
@@ -18,4 +18,4 @@ I find myself captivated by the realms of Information Security, programming, and
 - [Estruturação de um Grupo de Resposta a Incidentes de Segurança Cibernética para o Contexto de Smart Grid na Cemig](https://drive.google.com/file/d/13Sfpsy2EhfUg4ku_iqCvl0RBgNrTwVZB/view?usp=drive_link) (2014) CERT.br, São-Paulo.  `pt_BR`
 
 
-![José Lopes' Heraldic Shield](/images/shield-lopes.png "My Heraldic Shield: An argent rampant wolf holding an argent arrow inside an azure shield with a gules border")
+![Joe Lopes' Heraldic Shield](/images/shield-lopes.png "An argent rampant wolf holding an argent arrow inside an azure shield with a gules border")
