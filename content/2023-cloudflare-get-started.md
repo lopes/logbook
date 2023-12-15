@@ -26,7 +26,7 @@ Before changing anything, make sure to back up relevant data from [Netlify](http
 
 The following figure shows the architecture we're going to implement.  The first step is to open CloudFlare's dashboard and add the site/domain to be configured.
 
-![Web Architecture with CloudFlare and Netlify](/images/diagram-cloudflare-netlify.png "Sequence diagram showing how the architecture works.")
+![Web Architecture with CloudFlare and Netlify](/images/diagram-cloudflare-netlify.png "Sequence diagram showing how the architecture works")
 
 After entering the domain, CloudFlare will automatically fetch and add the current DNS configurations with similar data retrieved by httping.  While that can work, I recommend deleting all data and add manually according to Netlify's DNS data: Open [Netlify's DNS dashboard](https://docs.netlify.com/domains-https/netlify-dns/?_ga=2.53786856.179018823.1672665095-1288696901.1672665095) and take note of the following data under DNS Records section:
 

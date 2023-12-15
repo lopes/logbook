@@ -113,3 +113,5 @@ The auth logs will give you information enough to move some IPs and usernames fr
 These IOCs can be used to link actions across different tools (aka., log files) and describe the actions performed by the adversaries.  In this sense, having the actions disposed in a timeline is essential and here you must be aware of time zones because not all systems may be in the same tz or (worse and more frequent) this information is missing and you must infer when an action happened in comparison to others.
 
 In summary, perform a discovery in the first few moments and define a hypothesis for compromise.  Investigate the logs in the sequence of your hypothesis taking notes for IOCs and their statuses (investigating, confirmed, clear) and mount the sequence of actions considering the log timestamp and timezone.
+
+![Hammered](/images/sshot-hammered.png "Hammered challenge done with success")
