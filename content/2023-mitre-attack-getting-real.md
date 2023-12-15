@@ -31,7 +31,7 @@ Threat Detection and Response (TDR) teams can leverage MITRE ATT&CK within speci
 Moreover, the Cyber Threat Intelligence (CTI) team can integrate TTPs from MITRE with adversaries and the likelihood of exploitation.  Infosec leaders can use such mappings to identify gaps and decide on prioritized actions for upcoming sprints/cycles.
 
 {% admonition(type="tip", title="Pro Tip") %}
-MITRE Navigator is an excellent tool for visually representing these mappings.  Invest time in automating data extraction and use it to create layers (e.g., one for TDR and another for CTI).  Overlay this data in Navigator to streamline the analysis process.
+[MITRE Navigator](https://mitre-attack.github.io/attack-navigator/) is an excellent tool for visually representing these mappings.  Invest time in automating data extraction and use it to create layers (e.g., one for TDR and another for CTI).  Overlay this data in Navigator to streamline the analysis process.
 {% end %}
 
 
