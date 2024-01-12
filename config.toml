@@ -3,7 +3,7 @@ theme    = "kita"
 
 title       = "Lopes' Logbook"
 description = "Chronicles of my bold journey through Infosec and beyond realms."
-author      = "José Lopes"
+author      = "Joe Lopes"
 
 
 default_language   = "en"
