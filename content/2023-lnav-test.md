@@ -28,7 +28,7 @@ I started analyzing the Apache Access Logs to check available fields and to coun
 ;select c_ip, count(c_ip) from logline group by c_ip order by count(c_ip) desc
 ```
 
-After a few tries, I got some tips but kept stuck.  Only then I noticed this question was poorly written because the goal is not clear. I noticed in the comments that other people had trouble here too.  Then, I res restarted the investigation with `control-r` to get two lists, one of IPs that accessed the system and the other with the IPs that tried to access and failed (suspicious).  Crossing the two lists manually as they were short, put me in the right direction.
+After a few tries, I got some tips but kept stuck.  Only then I noticed this question was poorly written because the goal is not clear. I noticed in the comments that other people had trouble here too.  Then, I restarted the investigation with `control-r` to get two lists, one of IPs that accessed the system and the other with the IPs that tried to access and failed (suspicious).  Crossing the two lists manually as they were short, put me in the right direction.
 
 I generated the first list with two commands: 
 
