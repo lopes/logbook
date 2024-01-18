@@ -1,7 +1,7 @@
 +++
 title = "MITRE ATT&CK 101: Bridging the Gap"
 date  = 2024-01-12
-description = "Essential guide to MITRE ATT&CK, bridging gaps with practical insights for cybersecurity."
+description = "Guide to MITRE ATT&CK with history and context for better usage."
 
 [taxonomies]
 tags = ["security", "threatdetection"]
@@ -77,4 +77,4 @@ MITRE ATT&CK is a robust model, or framework if you prefer, that proves invaluab
 
 Some crucial advice applies in this context.  <mark>Avoid attempting to implement countermeasures against every technique, and recognize the impracticality of achieving perfect coverage over a technique.</mark>  If you've grasped the basics, you'll comprehend why.
 
-Starting simple with MITRE ATT&CK is perfectly acceptable, supported by available materials (as previously presented in this post).  However, from day one, it's essential to have a clear understanding of how to leverage this data.  Mere mapping without practical application may lead to a sense of futile effort.  This, in turn, could result in the creation of incorrect mappings, leading to misinformation -—a situation more detrimental than a lack of information.  Actively use this data to define and prioritize actions, incorporating it into regular syncs with the team.  While there's no harm in starting small (I, myself, am a huge fan of MVPs), maintain consistency and robustness in your approach.  Map and actively use the data; you'll find it beneficial, and improvements will naturally follow.
+Starting simple with MITRE ATT&CK is perfectly acceptable, supported by available materials (as previously presented in this post).  However, from day one, it's essential to have a clear understanding of how to leverage this data.  Mere mapping without practical application may lead to a sense of futile effort.  This, in turn, could result in the creation of incorrect mappings, leading to misinformation --a situation more detrimental than a lack of information.  Actively use this data to define and prioritize actions, incorporating it into regular syncs with the team.  While there's no harm in starting small (I, myself, am a huge fan of MVPs), maintain consistency and robustness in your approach.  Map and actively use the data; you'll find it beneficial, and improvements will naturally follow.

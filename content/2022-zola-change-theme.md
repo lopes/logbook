@@ -1,7 +1,7 @@
 +++
-title = "How to Change Zola Theme: Steps and Recommendations"
+title = "Changing the Zola Theme"
 date  = 2022-08-29
-description = "Get valuable tips on how to change your Zola blog theme without breaking your site."
+description = "Valuable tips on changing your Zola blog theme without breaking the site."
 
 [taxonomies]
 tags = ["zola", "git", "blogging"]

@@ -1,7 +1,7 @@
 +++
 title = "Trabalhando com Submódulos no Git"
 date = 2020-05-12
-description = "Aprenda a adicionar, atualizar e remover submódulos no Git, comandos úteis e referência."
+description = "Adicione, atualize e remova submódulos no Git, comandos úteis e referência."
 
 [taxonomies]
 tags = ["git"]

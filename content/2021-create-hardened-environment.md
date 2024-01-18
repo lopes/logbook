@@ -1,7 +1,7 @@
 +++
 title = "Creating a Hardened Testing Environment"
 date  = 2021-11-04
-description = "Learn how to install and harden Arch Linux to create a safer environment for networking tests."
+description = "Install and harden Arch Linux to create a safer OS for network tests."
 
 [taxonomies]
 tags = ["arch", "unix", "security", "networking"]

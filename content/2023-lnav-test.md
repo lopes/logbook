@@ -1,7 +1,7 @@
 +++
 title = "Testing The Logfile Navigator"
 date  = 2023-12-15
-description = "Exploring log analysis with lnav tool: challenges, insights, and practical tips."
+description = "Exploring log analysis with lnav tool: challenges, insights, and tips."
 
 [taxonomies]
 tags = ["threatdetection", "security", "csirt"]

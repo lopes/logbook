@@ -1,5 +1,5 @@
 +++
-title = "Effective Detection Rules for Network and Port Scans"
+title = "Effective Detection Rules for Net and Port Scans"
 date  = 2023-05-30
 description = "Effective network and port scan detection."
 

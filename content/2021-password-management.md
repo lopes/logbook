@@ -1,7 +1,7 @@
 +++
 title = "Secure and Easy Password and MFA Management"
 date  = 2021-10-05
-description = "Learn to manage your passwords and MFA tools to maximize security and usability."
+description = "Manage your passwords and MFA tools to maximize security and usability."
 
 [taxonomies]
 tags = ["security"]

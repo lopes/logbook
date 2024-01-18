@@ -1,7 +1,7 @@
 +++
 title = "Arch Linux Workstation Setup"
 date  = 2020-07-15
-description = "Install graphical environment and apps, setup configs for a workflow-oriented workstation."
+description = "Install graphical environment and apps, setup configs in your workstation."
 
 [taxonomies]
 tags = ["unix", "arch"]

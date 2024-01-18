@@ -1,7 +1,7 @@
 +++
 title = "Getting Started with CloudFlare for Web Protection"
 date  = 2023-01-02
-description = "Learn how to use CloudFlare's free plan on personal sites for better security and protection."
+description = "Use CloudFlare's free plan on personal sites for better security."
 
 [taxonomies]
 tags = ["cloud", "cloudflare", "netlify"]

@@ -1,5 +1,5 @@
 +++
-title = "How to Calculate and Decompose Syslog Message Priority"
+title = "Calculating and Decomposing Syslog Priority"
 date  = 2021-09-02
 description = "Calculate and decompose Syslog message priority."
 

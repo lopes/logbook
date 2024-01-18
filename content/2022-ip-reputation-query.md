@@ -1,7 +1,7 @@
 +++
 title = "Query Security Services for IP Reputation"
 date  = 2022-09-06
-description = "Learn how to query three security services in one shell script to check IP reputation."
+description = "Query three security services in one shell script to check IP reputation."
 
 [taxonomies]
 tags = ["unix", "security", "networking"]

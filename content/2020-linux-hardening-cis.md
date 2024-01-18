@@ -1,7 +1,7 @@
 +++
 title = "Linux Hardening with CIS Controls"
 date  = 2020-07-08
-description = "Applying additional CIS controls for improving the security of an Arch Linux installation."
+description = "Applying CIS controls for improving the security of an Arch Linux."
 
 [taxonomies]
 tags = ["unix", "arch", "security"]

@@ -1,5 +1,5 @@
 +++
-title = "Recovering from a PAM Misconfiguration in Arch Linux"
+title = "Recovering Arch Linux from a PAM Issue"
 date  = 2021-10-26
 description = "How to recover Arch with a misconfigured PAM configuration."
 

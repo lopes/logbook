@@ -1,5 +1,5 @@
 +++
-title = "Minha Experiência com a Certificação CompTIA Security+"
+title = "Certificação CompTIA Security+"
 date  = 2020-05-05
 description = "Relato de como se preparar para a certificação S+ e dicas para estudos."
 

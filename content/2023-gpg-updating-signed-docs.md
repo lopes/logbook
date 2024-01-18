@@ -1,7 +1,7 @@
 +++
 title = "Updating Signed Documents with GPG"
 date  = 2023-01-02
-description = "Learn how to update GPG signed documents, from importing keys to patching multiple files."
+description = "Update GPG signed documents, from key import to patching files in batch."
 
 [taxonomies]
 tags = ["security"]

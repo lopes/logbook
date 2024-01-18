@@ -1,7 +1,7 @@
 +++
-title = "Automating Incident Response: A Scalable and Robust Approach"
+title = "Automating Incident Response"
 date  = 2022-10-25
-description = "Learn how to tackle log centralization, SIEM operationalization, and IR automation."
+description = "Tackling log centralization, SIEM operationalization, and IR automation."
 
 [taxonomies]
 tags = ["security", "logging", "siem", "automation"]

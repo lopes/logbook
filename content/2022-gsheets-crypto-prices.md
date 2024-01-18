@@ -1,7 +1,7 @@
 +++
 title = "Getting Cryptocurrency Prices in Google Sheets"
 date  = 2022-12-26
-description = "Learn how to get minor cryptocurrency prices in Google Sheets using Crypto Prices."
+description = "Get minor cryptocurrency prices in Google Sheets using 3rd party service."
 
 [taxonomies]
 tags = ["finance"]
