@@ -127,8 +127,7 @@ As pointed out, I created a mind map to help me in my studies and after passing 
 
 I called it Sunfish because the final mind map plotted as a fishbone resembles an [Ocean Sunfish](https://www.nationalgeographic.com/animals/fish/o/ocean-sunfish/) skeleton.
 
-Here are the three flavors of this mind map:
+Here are the two flavors of this mind map:
 
-- [PDF](/documents/cissp-sunfish.pdf): You can navigate through the topics, but can't see notes and there is an XMind watermark --I used the free version.  Despite that, it is a good way to have the first contact with the material.
-- [Markdown](/documents/cissp-sunfish.md): XMind allowed me to export the mind map to markdown and since it is Git friendly and compatible with Zola, I decided to make it available.  Good for navigating between topics using a web browser or text editor.
-- [XMind](/documents/cissp-sunfish.xmind): This is the master file, so it can be opened in XMind to further improvements.  It is also a good way to navigate between the topics and read every note.
+- [PDF](https://drive.google.com/file/d/1Z42lKPEj11h6GuLvqZomKEzdvgtj01o8/view?usp=sharing): You can navigate through the topics, but can't see notes and there is an XMind watermark --I used the free version.  Despite that, it is a good way to have the first contact with the material.
+- [XMind](https://drive.google.com/file/d/1Vm-AbjCHIXGIMFE1dFgoPFALPfthYCpK/view?usp=sharing): This is the master file, so it can be opened in XMind to further improvements.  It is also a good way to navigate between the topics and read every note.

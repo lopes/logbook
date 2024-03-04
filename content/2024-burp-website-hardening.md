@@ -7,7 +7,7 @@ description = "Guide to MITRE ATT&CK with history and context for better usage."
 tags = ["security", "netlify", "cloudflare"]
 +++
 
-Recently, I delved into Burp, experimenting with some Professional Suite features, when it occurred to me that I had never tested my own website.  Despite having security in mind during the design phase (security by design), incorporating a static website and a Web Application Firewall (WAF), I recognized the importance of proactive testing.  In this post, I'll share the vulnerabilities I identified and the corresponding fixes.
+Recently, I delved into [Burp](https://portswigger.net/burp), experimenting with some Professional Suite features, when it occurred to me that I had never tested my own website.  Despite having security in mind during the design phase (security by design), incorporating a static website and a Web Application Firewall (WAF), I recognized the importance of proactive testing.  In this post, I'll share the vulnerabilities I identified and the corresponding fixes.
 
 
 ## Running Burp
