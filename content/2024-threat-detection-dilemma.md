@@ -24,7 +24,9 @@ Before delving into the dilemma, let's establish a shared understanding of some 
 
 The focus here is on TP and FN, which involve relevant events.  Keep these in mind as we proceed.  Now, armed with this data, we can calculate two crucial metrics: **Precision** and **Recall**.
 
-> Maintaining a high level of confidence in CSIRT analysis is paramount.  Thus, the alert rationale should remain as simple as possible.  Incident Responders must tag alerts as TP or FP after triage and if additional metrics are desired, subcategories like Malware and Phishing for TP, and Anomaly and Internal Testing for FP can be created.  However, simplicity (KISS) is key to success based on my experience.
+{% admonition(type="tip", title="Pro Tip") %}
+Maintaining a high level of confidence in CSIRT analysis is paramount.  Thus, the alert rationale should remain as simple as possible.  Incident Responders must tag alerts as TP or FP after triage and if additional metrics are desired, subcategories like Malware and Phishing for TP, and Anomaly and Internal Testing for FP can be created.  However, simplicity (KISS) is key to success based on my experience.
+{% end %}
 
 ### Precision
 Precision, representing the ratio of FPs a rule generates, is calculated as follows:
