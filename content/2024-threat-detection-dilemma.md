@@ -57,11 +57,11 @@ In this image, the FN scope comprises entirely malicious (relevant) events (red 
 In this example, the Recall ratio is low (37.5%; only 3 out of 8 malicious events were detected), indicating that urgent maintenance for this analytic *may be* necessary.  If the analytic's scope is adjusted to encompass all events in the scenario (benign and malicious), Precision and Recall would be:
 
 $$
-  P = \frac{8}{8 + 14} = 36\\%
+  P = \frac{8}{8 + 14} = 36.36\\%
 $$
 
 $$
-  R = \frac{8}{8+0} = 100\\%
+  R = \frac{8}{8+0} = 100.00\\%
 $$
 
 This adjustment, while reducing Precision, significantly improves Recall (100% is infeasible, see the next note, but the improvement is evident).  Context matters, and *in this fictional scenario*, it seems like a prudent decision.
