@@ -5,6 +5,9 @@ description = "Seamless productivity with tools and a process for better organiz
 
 [taxonomies]
 tags = ["productivity"]
+
+[extra]
+mermaid = true
 +++
 
 
@@ -12,8 +15,21 @@ In 2023, I encountered a significant challenge while deploying a SIEM.  Drawing 
 
 After thorough research, I came across productivity gurus' videos showcasing intricate processes and tools.  While acknowledging their valuable insights, I aimed to streamline the process and reduce the number of tools, easing the management burden and allowing more time for productive tasks.
 
-Fortunately, Jeff Su had faced a similar challenge and shared his simplified productivity process in [this video](https://www.youtube.com/watch?v=7M6bIeVbCqA).  I adapted his approach, incorporating insights from [Matt D’avella’s video](https://www.youtube.com/watch?v=0_44XEVOwek) and adding my personal touch.  In this post, I'll present the 2-step productivity system (**Capture** and **Organize**) and how I leverage tools to achieve my goals.
+Fortunately, Jeff Su had faced a similar challenge and shared his simplified productivity process in [this video](https://www.youtube.com/watch?v=7M6bIeVbCqA).  I adapted his approach, incorporating insights from [Matt D’avella’s video](https://www.youtube.com/watch?v=0_44XEVOwek) and adding my personal touch.  In this post, I'll present the 2-step productivity (big picture in the next flowchart) system (**Capture** and **Organize**) and how I leverage tools to achieve my goals.
 
+
+{% mermaid() %}
+```mermaid
+flowchart LR
+  out(External sources) --> capture[Capture]
+  capture --> organize[Organize]
+  organize --> events[Events]
+  organize --> tasks[Tasks]
+  organize --> files[Files]
+  organize --> docs[Docs]
+  organize --> contact[Contact]
+```
+{% end %}
 
 ## Capture
 Capture involves acquiring new tasks, projects, or crucial data for personal and project use, essentially the input received from external sources.
@@ -32,10 +48,14 @@ As a gateway for tasks and content, Gmail plays a vital role, especially for new
 Once data is received, effective handling is necessary to optimize its use.  The primary goal is to sort data based on where it will be utilized, not just its source (following Tiago Forte's quote).
 
 ### Gmail
-Emails (Gmail user here) can be tricky due to the influx of useless messages.  To combat this, I unsubscribe from unnecessary notifications and heavily use the “Report SPAM” button.  I employ filters to label and manage frequent messages, such as newsletters, banking updates, and tool notifications.  The goal is to spend less time handling messages and more time on essential tasks with the Inbox Zero principle in mind.
+{% admonition(type="warning", title="Update") %}
+I've updated this part because I'm no longer using labels (high, medium, low) to categorize messages.  After some time using it, I noticed that I could just remove the notifications for new messages and leave uncategorized messages in Inbox.  Following the Zero Inbox principle, I'll keep this box under control.  Important messages will be tagged and for them I'll be notified because usually they require action from my side.  So I'm using two categories in practice: Important and Not Important.
+{% end %}
 
-#### Labels
-Contextualizing messages with labels saves time managing the Inbox.  I use three priority labels: `High`, `Medium`, and `Low`.  Tagging frequent senders allows for efficient handling, distinguishing between urgent and non-urgent messages.
+Emails (Gmail user here) can be tricky due to the influx of useless messages.  To combat this, I unsubscribe from unnecessary notifications and heavily use the “Report SPAM” button.  I employ filters to mark important messages and manage frequent messages, such as newsletters, banking updates, and tool notifications.  The goal is to spend less time handling messages and more time on essential tasks with the **Inbox Zero** principle in mind.
+
+#### Important Messages
+Gmail has a built-in intelligence that automatically categorizes some messages as important.  Additionally, I created a filter to make sure that some messages (either by sender or subject) will always be marked as important to me.
 
 #### Mails for the Future
 For messages requiring future action, two approaches are employed:
@@ -47,12 +67,26 @@ For messages requiring future action, two approaches are employed:
 [Filters](https://support.google.com/mail/answer/7190?hl=en) complement other strategies to automate actions and simplify my workflow.  Important filters include:
 
 - **Newsletters:** Content sent to `my.user.name+newsletter@gmail.com` is forwarded to Instapaper, marked as read, and deleted.
-- **High Priority:** Known senders requiring frequent action are tagged as high priority, marked as important, archived, and never sent to SPAM.
-- **Medium Priority:** Mostly financial and streaming services, labeled and archived.
-- **Low Priority:** "No reply" and "for your information" mails, handled similarly to Medium priority.
+- **Important:** Known senders requiring frequent action are tagged as high priority, marked as important, archived, and never sent to SPAM.
 - **Unwanted:** Unsubscribe attempts that couldn’t be processed, marked as read, and deleted.
 
-Periodically, a "Garbage Collector" filter deletes any unlabelled message older than 30 days.
+The chart below show a summary of this scheme.
+
+{% mermaid() %}
+```mermaid
+flowchart LR
+  new_mail[New Mail] --> q_important{Important?}
+  q_important -->|Yes| flag[Flag as important]
+  flag --> store[Store in Inbox]
+  store --> notify[Notify]
+  q_important -->|No| q_unwanted{Unwanted?}
+  q_unwanted -->|Yes| delete[Delete message]
+  q_unwanted -->|No| q_newsletter{Newsletter?}
+  q_newsletter -->|Yes| forward[Forward]
+  q_newsletter -->|No| delete
+  forward --> delete
+```
+{% end %}
 
 {% admonition(type="info", title="Notifications") %}
 Email notifications can be a bit bothersome, but certain ones are crucial—like the "new sign-in alerts."  Given that the High-priority filter bypasses the Inbox, you might miss out on notifications for these important messages.  To address this, I recommend adjusting the settings in the Gmail app on my phone (`Gmail > Settings > [your email address] > Notifications > Manage Labels`).  Here, I enable syncing for the High priority label and turn on notifications for new messages in this category.  Additionally, I ensure that notifications for other labels, including the Inbox, are turned off.

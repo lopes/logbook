@@ -5,6 +5,9 @@ description = "A 1980s Infosec thriller with groundbreaking investigations."
 
 [taxonomies]
 tags = ["security", "review"]
+
+[extra]
+cover_image = "images/pic-cliff-stoll.jpg"
 +++
 
 

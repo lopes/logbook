@@ -5,6 +5,9 @@ description = "Tools, rituals, and reflections for professional growth in Infose
 
 [taxonomies]
 tags = ["productivity", "career"]
+
+[extra]
+cover_image = "images/drawing-vitruvian-man.jpg"
 +++
 
 
