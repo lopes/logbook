@@ -33,7 +33,7 @@ extra_syntaxes_and_themes = []
 
 [extra.profile]
 name          = "Joe Lopes"
-bio           = "Infosec Engineer working with Threat Detection, boldly following his own journey."
+bio           = "Infosec Engineer. Logging my yamadori journey."
 avatar_url    = "./images/avatar-lopes.png"
 avatar_invert = false
 
