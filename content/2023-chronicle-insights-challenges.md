@@ -7,7 +7,7 @@ description = "Features and challenges in a review centered around Threat Detect
 tags = ["logging", "siem", "security"]
 
 [extra]
-image = "images/logos/google-chronicle.png"
+cover_image = "images/logos/google-chronicle.png"
 +++
 
 I've been using Chronicle SIEM for approximately six months now, and while reviewing my notes from this period, I've decided to compile everything into a blog post.  In this post, I aim to share my personal highlights of the tool and provide insights into areas where there's room for improvement.  Since there's limited information available about this relatively new system on the internet, I hope this post can be of help to others embarking on their own Chronicle SIEM journey.

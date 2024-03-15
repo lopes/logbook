@@ -5,6 +5,9 @@ description = "Tackling log centralization, SIEM operationalization, and IR auto
 
 [taxonomies]
 tags = ["security", "logging", "siem", "automation"]
+
+[extra]
+cover_image = "images/paiting-breezing-up.png"
 +++
 
 

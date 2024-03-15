@@ -5,6 +5,9 @@ description = "Avoidable friction between cybersecurity teams during Red Team ex
 
 [taxonomies]
 tags = ["security", "csirt"]
+
+[extra]
+cover_image = "images/painting-valmy-battle.jpg"
 +++
 
 I've been working with the incident response (IR) for a few years and more recently when [Red Teams](https://csrc.nist.gov/glossary/term/red_team) (RTs) started trending, I experienced some avoidable friction between both teams I wanted to share.

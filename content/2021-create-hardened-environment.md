@@ -5,9 +5,6 @@ description = "Install and harden Arch Linux to create a safer OS for network te
 
 [taxonomies]
 tags = ["arch", "unix", "security", "networking"]
-
-[extra]
-image = "images/logos/archlinux.png"
 +++
 
 In my job, we needed to perform some networking tests in an unsafe network segment, so I decided to make a machine for that purpose, granting that the risks were mitigated by hardening the operating system.  In this post, I describe the steps to create this environment.

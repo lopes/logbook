@@ -5,9 +5,6 @@ description = "Learn how to install and use Nerd Fonts."
 
 [taxonomies]
 tags = ["unix", "arch"]
-
-[extra]
-image = "images/logos/archlinux.png"
 +++
 
 I am setting up my graphical environment in Arch Linux, but since the installation is minimal, I noticed I needed to install TTF/OTF fonts.  The first font I installed was DejaVu, which is pretty good, but I wanted something more modern, but with good support from different characters (Latin) and glyphs.

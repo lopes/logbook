@@ -5,9 +5,6 @@ description = "Use CloudFlare's free plan on personal sites for better security.
 
 [taxonomies]
 tags = ["cloud", "cloudflare", "netlify"]
-
-[extra]
-image = "images/diagram-cloudflare-netlify.png"
 +++
 
 [CloudFlare](https://www.cloudflare.com/) is a great service for web protection and with its free plan, we're able to use many great features to improve the security of personal websites.  In the following lines I'll describe how I got it working for me.

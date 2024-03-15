@@ -7,7 +7,7 @@ description = "Discover how integrating CTI enhances Threat Detection and CSIRT.
 tags = ["review", "security", "threatdetection"]
 
 [extra]
-image = "images/pic-crow.jpg"
+cover_image = "images/pic-crow.jpg"
 +++
 
 As I transitioned from Incident Response to Threat Detection, I felt the need to better understand how I could deliver more value to our CSIRT and address some of the problems I encountered while handling incidents.  That's when a friend recommended the [Intelligence-Driven Incident Response, 2nd Edition](https://learning.oreilly.com/library/view/intelligence-driven-incident-response/9781098120672/) (IDIR) book as a resource that would systematically present Cyber Threat Intelligence (CTI) terminology and illustrate how each piece of the puzzle fits together.  Motivated by this, I began reading this (spoiler) excellent book, and here I'm sharing my impressions after finishing it.

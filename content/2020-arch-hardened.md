@@ -7,7 +7,7 @@ description = "Step-by-step guide to perform a hardened Arch Linux installation.
 tags = ["unix", "arch", "security"]
 
 [extra]
-image = "images/logos/archlinux.png"
+cover_image = "images/logos/archlinux.png"
 +++
 
 I have decided to install Arch Linux on my next laptop but first had to test it to be sure of my choice.  Since I was looking for a hardened installation, which was not covered by the official installation guide, I decided to create this guide for my personal use and I hope it will be useful to someone else.

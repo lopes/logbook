@@ -7,7 +7,7 @@ description = "The materials and strategy I used to get this certification."
 tags = ["cloud", "aws", "security", "career"]
 
 [extra]
-image = "images/logos/aws-cert-sec.png"
+cover_image = "images/logos/aws-cert-sec.png"
 +++
 
 For the last few months I had been studying for the [AWS Certified Security - Specialty](https://aws.amazon.com/pt/certification/certified-security-specialty/) (SCS) certification and in this review, I am going to present every step I took to get this new certification in my career.

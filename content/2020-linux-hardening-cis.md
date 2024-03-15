@@ -5,9 +5,6 @@ description = "Applying CIS controls for improving the security of an Arch Linux
 
 [taxonomies]
 tags = ["unix", "arch", "security"]
-
-[extra]
-image = "images/logos/archlinux.png"
 +++
 
 This is a direct sequence of [Installing Arch Linux](https://lopes.id/installing-arch-linux), which already includes some hardening practices.  This guide will go one step further because I am applying some [CIS](https://www.cisecurity.org/cis-benchmarks/) controls specific for Linux environments, obviously scoping and tailoring for my personal purposes.

@@ -7,7 +7,7 @@ description = "[pt_BR] A broad and funny chronic about being a homebrewer in Bra
 tags = ["random"]
 
 [extra]
-image = "images/logos/bierminen.png"
+cover_image = "images/logos/bierminen.png"
 +++
 
 Quando eu digo a alguém que faço a minha própria cerveja, algumas perguntas comuns aparecem, como:

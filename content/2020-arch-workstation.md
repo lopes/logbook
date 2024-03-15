@@ -5,9 +5,6 @@ description = "Install graphical environment and apps, setup configs in your wor
 
 [taxonomies]
 tags = ["unix", "arch"]
-
-[extra]
-image = "images/logos/archlinux.png"
 +++
 
 Now that the Arch Linux is [installed](https://lopes.id/installing-arch-linux/) and [hardened](https://lopes.id/hardening-arch-linux/), it is time to install a graphical environment to enable this system to be used as a workstation.  This text will show how to setup the system, install the basic packages, and apply my personal configurations to build a system very close to mine.
