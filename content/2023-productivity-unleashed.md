@@ -70,7 +70,7 @@ For messages requiring future action, two approaches are employed:
 - **Important:** Known senders requiring frequent action are tagged as high priority, marked as important, archived, and never sent to SPAM.
 - **Unwanted:** Unsubscribe attempts that couldn’t be processed, marked as read, and deleted.
 
-The chart below show a summary of this scheme.
+The chart below shows a summary of this scheme.
 
 {% mermaid() %}
 ```mermaid
