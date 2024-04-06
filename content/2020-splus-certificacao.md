@@ -5,11 +5,12 @@ description = "Relato de como se preparar para a certificação S+ e dicas para 
 
 [taxonomies]
 tags = ["career", "security", "review"]
+
+[extra]
+cover_image = "images/logos/comptia-splus.png"
 +++
 
 No fim de 2019, a empresa onde eu trabalho ofereceu um curso preparatório para a certificação [CompTIA Security+](https://www.comptia.org/certifications/security) (S+), com direito a um *voucher* para o exame.  Até então, essa era uma das certificações que eu planejava pedir para os contratados do SOC, mas achei uma ótima oportunidade de fazer a prova e ver por mim mesmo se fazia sentido.
-
-![CompTIA Security+ logo](/images/logos/comptia-splus.png "CompTIA Security+ logo: White circle with a red banner")
 
 Não aproveitei muito o curso, pois eu não gosto do modelo tradicional de ensino.  Como cada um tem sua experiência e velocidade de aprendizagem, colocar todos numa sala, no mesmo ritmo, é contra-producente --sem contar que normalmente, como nesta certificação, quarenta horas não são suficientes para cobrir todo o conteúdo com os detalhes necessários.  Valeu mais pelo *voucher*.  O conteúdo do curso foi dado em português, mas as questões são criadas em inglês e, devido à qualidade de alguns simulados em português a que tive acesso, resolvi que estudaria e faria a prova em inglês.  Estávamos na última semana de novembro e eu fui audacioso, marcando a prova para três semanas depois, antes do Natal.  
 

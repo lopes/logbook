@@ -12,8 +12,6 @@ cover_image = "images/logos/isc2-cissp.png"
 
 In this post, I am going to share my personal experience to obtain the CISSP certification.  CISSP is one of the most renowned certifications for the information security career and it is said that it is very hard to earn.  Earlier this year (2020), I decided to give CISSP a try and in the following lines, I describe each step of my journey which includes my background, study strategy, exam experience, the endorsement process, analysis of the material I used, my certification numbers, final notes, and the mind map I created as part of my study strategy. Hope you enjoy this reading and that this post may help someone to grab this certification too.
 
-![CISSP logo](/images/logos/isc2-cissp.png "CISSP logo: Green box with the word CISSP in white inside")
-
 
 ## Background
 I am a Brazillian bachelor of computer science living in Brazil, working in IT since 2007.  Started working in the IT support area, moved to governance, then moved to another company to work in IT infrastructure, focused on Unix and Windows servers.  Until here I had ITIL, COBIT, and ISFS certifications.

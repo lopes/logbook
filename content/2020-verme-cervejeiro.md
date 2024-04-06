@@ -20,8 +20,6 @@ Quando eu digo a alguém que faço a minha própria cerveja, algumas perguntas c
 
 Eu não encaro fazer cerveja em casa (*homebrew*) como um trabalho ou como uma forma de economizar, mas como *hobbie*.
 
-![Bierminen Logo](/images/logos/bierminen.png "Bierminen logo: A colorful coat of arms with shield, wolf, wheat, helmet, and other elements")
-
 
 ## Economia
 Fazer cerveja em casa sai caro.  Fato.  Os equipamentos para fazer cervejas com processos minimamente consistentes e repetíveis não são baratos e você ainda precisa percorrer uma *via sacra* para encontrá-los.  Mesmo depois de comprar tudo, não dá para fazer cerveja no apartamento de 75 m² sem tirar a mesa de jantar, o sofá, a TV e a mulher da sala.  Você precisa de espaço e qualquer espaço não serve.  Além disso, o preço de uma cerveja verdadeiramente artesanal costuma sair mais caro que uma *craft beer no growler*.

@@ -24,8 +24,6 @@ Analyzing past situations, I divide the RTs into three categories, based on the 
 
 In both scenarios, I, as part of the security team, had to deal with being advertised or not of such tests and this is the central point here.
 
-![The Battle of Valmy](/images/painting-valmy-battle.jpg "Battle of Valmy won by General Kellermann over the Prussian and troops of Brunswick in 1792")
-
 
 ## To Warn or Not To Warn, That's The Question
 

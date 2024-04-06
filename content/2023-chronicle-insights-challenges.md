@@ -16,8 +16,6 @@ I've been using Chronicle SIEM for approximately six months now, and while revie
 It's worth noting that my overall perception is that Chronicle SIEM is a system in active development.  Over the course of these six months, I've witnessed features being added overnight and subtle changes in the User Interface.  As a result, some of the insights I share here may evolve as the system matures.
 {% end %}
 
-![Chronicle SIEM logo](/images/logos/google-chronicle.png "Chronicle SIEM logo: A stylized C followed by the word Chronicle")
-
 
 ## Unified Data Model (UDM)
 

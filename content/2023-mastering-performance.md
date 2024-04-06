@@ -17,8 +17,6 @@ In my experience, tracking my tasks and reviewing them regularly helped me be re
 
 It all changed when I started fighting back and putting myself on the agenda to actively analyze what I did, what I was doing, and what I wanted to do.  By doing this regularly, I started to recognize my own efforts and fix any route errors.  All in all, I feel that I stopped working like a “go horse” 🏇 to start working more like a pro.  In this post, I present the tools and rituals I created for myself, and I think they could be tailored by other people to achieve similar results.  Before starting, it's important to say that having my productivity tools configured and ready to help me was essential; I describe them in [this post](@/2023-productivity-unleashed.md).
 
-![Vitruvian Man](/images/drawing-vitruvian-man.jpg "Leonardo Da Vinci's Vitruvian Man")
-
 
 ## Tools
 Tools are means through which I achieve my objectives.  They are a crucial part of it because they help me document my achievements and are constantly used by me.
