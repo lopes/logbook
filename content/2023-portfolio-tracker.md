@@ -19,7 +19,6 @@ The most effective solution I encountered was creating my own spreadsheet, and h
 
 
 ## Requirements
-
 I initiated the process by clearly defining a list of requirements to guide the development:
 
 - The spreadsheet must exhibit speed, as waiting 5-10 seconds to update quotes and overall values is undesirable.
@@ -39,7 +38,6 @@ Being an investor, I understand the significance of tracking assets, both for pe
 
 
 ## Structure and Basics
-
 With the requirements set, after several tests, I established the following structure for the spreadsheet:
 
 - **Summary:** Offers a high-level overview, aggregating all dashboards.
@@ -57,15 +55,12 @@ It's crucial to mention that I chose [Google Sheets](https://www.google.com/shee
 
 
 ## Setup
-
 I began constructing the Setup Sheet since it doesn't rely on other Sheets and is a simpler sheet without formulas.  Here, I define supported currencies, actions, income types, as well as the taxonomy for classifying various assets.
 
 ### Currencies
-
 This entails a list of currencies that need to be declared alongside their respective [ISO 4217](https://docs.1010data.com/1010dataReferenceManual/DataTypesAndFormats/currencyUnitCodes.html) codes.  The first code assumes a special role, becoming the **default currency** throughout the entire spreadsheet.
 
 ### Actions
-
 These are the supported trading actions within the sheet.  As of this writing, they include:
 
 - Buy
@@ -77,7 +72,6 @@ These are the supported trading actions within the sheet.  As of this writing, t
 All options are self-explanatory, except for **Dividend Stocks**, which warrants clarification.  It serves as both an action and an income type.  When an asset pays dividends in the form of stocks, users must record this as a trade to update their position and as an income to document the generated cash inflow.
 
 ### Income Types
-
 This section outlines the ways assets can yield returns to investors:
 
 - Dividend
@@ -89,26 +83,26 @@ This section outlines the ways assets can yield returns to investors:
 While Dividend is well-known and Dividend Stocks was previously explained, the triad `BR/(JCP|Rendimento|Restituição)` is specific to Brazilian investors, representing local income types.
 
 ### Asset Taxonomy
-
 Creating an asset taxonomy that fits most cases is challenging, but I've made an earnest attempt.  The taxonomy employed in this spreadsheet consists of five layers:
 
 - **Geoclass:** Denotes the geographical location associated with assets.
 - **Class:** Represents the asset's macroclass.
-- **Equity, Debt, and Fund Classes:** Signifies the asset subclass within the Class.
-- **Equity, Debt, and Fund Dimension:** Referred to as “dimension,” this evaluates asset subclasses, heavily influenced by MorningStar matrices.
+- ~~**Equity, Debt, and Fund Classes:** Signifies the asset subclass within the Class.~~
+- ~~**Equity, Debt, and Fund Dimension:** Referred to as “dimension,” this evaluates asset subclasses, heavily influenced by MorningStar matrices.~~
 - **Equity, Debt, and Fund Sectors:** Specifies the sector the asset belongs to.
 
-### Brokers
+{% admonition(type="warning", title="Update") %}
+From version 1.9 (2024-04-25), **I dropped the Subclass and Dimension fields** as they used to mix stock picking with core-satellite concepts, adding unnecessary complexity and leading to misunderstandings.  This should be considered a portfolio tracker focused on stock picking although it can be safely used for core-satellite investments as well.
+{% end %}
 
+### Brokers
 This section lists the brokers where users conduct trades.  Currently, this is optional, but it might contribute to future dashboard compositions.
 
 ### Assets
-
 Codes used to symbolize assets.  Formulas in other Sheets utilize these symbols to fetch the most recent asset quotes, determining the portfolio's market value.
 
 
 ## Ledger
-
 This Sheet encompasses three tables:
 
 - **Transactions:** Records all transaction data.
@@ -120,7 +114,6 @@ In this Sheet, I've abstracted the concept of currency and focused solely on val
 {% end %}
 
 ### Transactions
-
 This table consolidates all information regarding asset transactions.  Users need to provide:
 
 - **Date:** The transaction date.
@@ -147,7 +140,6 @@ This table yields the following values:
 - **Last Transaction:** A column tracing the previous transaction (row) for that asset.  This column is hidden.
 
 #### Average Price
-
 The average price is updated with every operation except sales.  Its formula is as follows:
 
 $$
@@ -157,7 +149,6 @@ $$
 For Split and Rev. Split actions, the Average Price is divided or multiplied by the Ratio.
 
 ### Incomes
-
 This table records all types of income received from assets:
 
 - **Date:** Date of income receipt.
@@ -170,16 +161,14 @@ This table records all types of income received from assets:
 Taxes can be made optional if not being tracked.  Just ensure to indicate the income value post-tax deduction.
 
 ### Pivots
-
 The Pivots table aggregates summaries from both the Transactions and Incomes tables.  Other Sheets consume this table, especially the Portfolio Sheet, to retrieve the current status of investments.  This table is hidden from the user because it's needed only for inner controls.
 
 
 ## Portfolio
-
 The Portfolio Sheet consolidates both allocation and portfolio management capabilities.  Here, investors can establish target allocations as percentages based on Geoclasses and Geoclass / Asset Classes.  After setting these targets, they can begin populating the portfolio with assets, categorizing them, and assigning weights that the spreadsheet will then convert into percentages according to their Geoclasses and Classes.
 
 {% admonition(type="note", title="Note") %}
-While the taxonomy includes five layers for asset classification, only three are utilized to set asset allocation: Geoclass, Class, and the asset itself.  The other layers provide guidance for allocation targets but are purely informative.  Consequently, I define my allocation based on these three layers, then observe the resulting allocation based on the remaining three layers (Subclass, Dimension, and Sector), potentially making adjustments—such as increasing or decreasing investments in a sector, adding or removing a dimension, or incorporating more assets of a subclass.
+While the taxonomy includes five layers for asset classification, only three are utilized to set asset allocation: Geoclass, Class, and the asset itself.  The other layers provide guidance for allocation targets but are purely informative.  Consequently, I define my allocation based on these three layers, then observe the resulting allocation based on the remaining three layers (~~Subclass, Dimension, and~~ Sector), potentially making adjustments—such as increasing or decreasing investments in a sector, ~~adding or removing a dimension,~~ or incorporating more assets of a subclass.
 {% end %}
 
 I opted for using percentages for higher categories (Geo and Class) and weights for assets, as defining percentages for a few items is simpler, whereas it becomes more complex for a larger set.  Should I choose to use percentages for assets, I'd need to alter nearly all percentages for assets in the same Geo/Class.  Additionally, by employing weights, I can establish personalized rules based on Geo/Class.  For instance, I might use a scale of 0-10 for Stocks in Brazil and 0-5 for ETFs in the US.
@@ -199,7 +188,6 @@ Now, onto the technical details.  This spreadsheet comprises five tables:
 - Asset Allocation
 
 ### Portfolio Overview
-
 This table aggregates key data from the portfolio:
 
 - **Cash:** Available funds for investment, taken into account in allocation formulas.
@@ -219,11 +207,9 @@ $$
 - **Realized Gain:** The cumulative profit or loss from all sales.
 
 ### Geoclass Allocation
-
 Here, you can set target allocations (in percentages) for each geographical location where you're investing, and monitor the current allocation.  This allows you to discern where to direct your efforts.
 
 ### Class Allocation
-
 Similar to Geoclass, but focused on asset Classes.  Note that unlike Geoclass, each Class is linked to a Geoclass.  Consequently, you need to fill in all Classes for each Geoclass.
 
 {% admonition(type="tip", title="Pro Tip") %}
@@ -231,11 +217,9 @@ Suppose you allocate 60% overall to the US.  Within the US, you might want to sp
 {% end %}
 
 ### Subclasses Allocation
-
-This section provides supplementary data that proves valuable for fine-tuning allocation.  After defining all allocations, including Asset allocation (covered in the next section), this table aggregates target percentages based on Sectors, Domains, Subclasses, and Currencies.  With this information, you can adjust values to more accurately represent your portfolio intentions.
+This section provides supplementary data that proves valuable for fine-tuning allocation.  After defining all allocations, including Asset allocation (covered in the next section), this table aggregates target percentages based on Sectors, ~~Domains, Subclasses~~, and Currencies.  With this information, you can adjust values to more accurately represent your portfolio intentions.
 
 ### Asset Allocation
-
 This table takes center stage, as it's where you record each asset to construct your portfolio.  Properly classifying assets using Geoclass, Class, Subclass, Domain, Sector, and Currency, you can then assign a weight to each asset.  This is where the magic unfolds, as the spreadsheet undertakes the complex task of calculating your current situation, the desired scenario in terms of currency, and the necessary actions to achieve your objectives.  Here are the columns this table generates for your analysis:
 
 - **% Target Geo/Class:** The target percentage of the asset compared to others within the same Geoclass and Class (localized analysis).  This is calculated using the previously provided weight.
@@ -261,12 +245,10 @@ $$
 - **Normalized \*:** All other columns factor in monetary values linked to each asset's currency.  However, normalized columns (the rightmost ones) convert everything to the Default Currency (defined in the Setup Sheet).  This is crucial because from this point until the next Sheet (Summary), all data must be standardized to avoid comparing assets in different currencies, which would be impractical.
 
 #### Last Price
-
 This spreadsheet employs the `=GoogleFinance()` formula to fetch the most recent quote for each asset.  As indicated by Google, this value has a delay of approximately 15 minutes.  Unfortunately, Google Finance doesn't encompass all quotes, especially for Cryptocurrencies.  Thus, for some assets, users must replace the Google Finance formula with alternative methods to retrieve this data.  In such cases, be aware that you can use the spreadsheet's autofill feature to regain the original formula.
 
 
 ## Summary
-
 As the name implies, the Summary Sheet consolidates all data from the Portfolio to offer a comprehensive overview of investments.  In this spreadsheet, all currency-related data is converted into the Default Currency to ensure accurate comparisons.  While numerous data visualizations could be generated with the information from other sheets, a primary principle of this project is simplicity for enhanced performance.  Bearing this in mind, I constructed three tables here:
 
 - **Top 10:** Enlists the top 10 gains, losses, contributors, and Yield on Cost.
@@ -278,7 +260,7 @@ As the name implies, the Summary Sheet consolidates all data from the Portfolio 
   - Target Allocation (%)
   - Incomes
   - Average Yield on Cost
-  - Allocations by Classes, Subclasses, Dimensions, and Sectors.
+  - Allocations by Classes, ~~Subclasses, Dimensions,~~ and Sectors.
 - **Portfolio History:** Chronicles the annual evolution of the portfolio.  This history proves crucial for assessing whether you're on the right path.
 - **Subcategory Analysis:** Tracks the Unrealized Gain per subcategory regardless the Geoclass.  The Subclass is avoided here because it is complementary to Class (which is present) and the lack of space solely.
 
@@ -286,11 +268,9 @@ I refrained from generating charts with this data, as they tend to impact perfor
 
 
 ## Usage
-
 With all components in place, it was time to put the spreadsheet to use.  Here's my approach to utilizing it effectively.
 
 ### Initial Use
-
 My introduction to the spreadsheet involved a reverse method: I began by opening the Setup Sheet and personalizing it according to my needs.  This entailed configuring the currencies I invest in, adding my brokers, and listing the assets I currently own or plan to acquire.
 
 Subsequently, I transformed my prior tracking system into a format compatible with the Ledger.  This required transferring historical trade data and income earnings to the Ledger while making manual adjustments as needed.  Although somewhat tedious, this step was essential to ensure the accuracy of asset allocation and avoid any inconsistencies.
@@ -302,7 +282,6 @@ Lastly, I evaluated the set targets and made necessary adjustments to both perce
 The initial setup process demands more effort and time due to the various actions required.  However, careful execution at this stage leads to time savings in the future and a heightened level of control over assets.
 
 ### Subsequent Use
-
 I typically use this spreadsheet on a biweekly or monthly basis, depending on circumstances.
 
 When I'm infusing additional funds into my investments, I input the available amount into the Cash section within the `Portfolio/Portfolio Overview` table.  Then, I consult the Actions column to see the spreadsheet's recommendations.  During this analysis, I consider both the target amount for each asset and the "Unrealized Gain %" of each asset.  My investment prioritization follows a sequence: (a) assets marked with Buy, (b) among them, assets with the lowest positions, (c) assets with lower appreciation, and (d) assets exhibiting a higher tendency for appreciation (based on my analysis not tracked by the spreadsheet).  Once I've decided on my course of action, I proceed to execute the necessary transactions via my broker, after which I update the Ledger to maintain up-to-date records.
@@ -317,7 +296,6 @@ It's important to recognize that regularly adjusting allocations is natural and 
 
 
 ## Donations and Download
-
 If you find this spreadsheet beneficial and feel inclined to contribute, consider making a **donation** of any amount.  Rest assured, I will utilize each donated penny judiciously.  :)
 
 You can find the donation button in the bottom-right corner of the Summary Sheet, or you can use [THIS LINK](https://www.paypal.com/donate/?hosted_button_id=2W2ALYSGHTDTU).  Your recognition and support are greatly appreciated!
