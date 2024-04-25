@@ -85,13 +85,15 @@ While Dividend is well-known and Dividend Stocks was previously explained, the t
 ### Asset Taxonomy
 Creating an asset taxonomy that fits most cases is challenging, but I've made an earnest attempt.  The taxonomy employed in this spreadsheet consists of five layers:
 
-- **Geoclass:** Denotes the geographical location associated with assets.
+- ~~**Geoclass:** Denotes the geographical location associated with assets.~~ **Objective:** The objective you want to achieve by investing in that Asset.
 - **Class:** Represents the asset's macroclass.
 - ~~**Equity, Debt, and Fund Classes:** Signifies the asset subclass within the Class.~~
 - ~~**Equity, Debt, and Fund Dimension:** Referred to as “dimension,” this evaluates asset subclasses, heavily influenced by MorningStar matrices.~~
 - **Equity, Debt, and Fund Sectors:** Specifies the sector the asset belongs to.
 
 {% admonition(type="warning", title="Update") %}
+From version 1.10 (2024-04-25), **I renamed the Geoclass field** to **Objective**.  The new approach is to group assets based on specific objectives, such as buying a house, starting a new business, or retirement, rather than by geolocation.
+
 From version 1.9 (2024-04-25), **I dropped the Subclass and Dimension fields** as they used to mix stock picking with core-satellite concepts, adding unnecessary complexity and leading to misunderstandings.  This should be considered a portfolio tracker focused on stock picking although it can be safely used for core-satellite investments as well.
 {% end %}
 
@@ -165,10 +167,10 @@ The Pivots table aggregates summaries from both the Transactions and Incomes tab
 
 
 ## Portfolio
-The Portfolio Sheet consolidates both allocation and portfolio management capabilities.  Here, investors can establish target allocations as percentages based on Geoclasses and Geoclass / Asset Classes.  After setting these targets, they can begin populating the portfolio with assets, categorizing them, and assigning weights that the spreadsheet will then convert into percentages according to their Geoclasses and Classes.
+The Portfolio Sheet consolidates both allocation and portfolio management capabilities.  Here, investors can establish target allocations as percentages based on ~~Geoclasses~~ Objectives and ~~Geoclass~~ Objective / Asset Classes.  After setting these targets, they can begin populating the portfolio with assets, categorizing them, and assigning weights that the spreadsheet will then convert into percentages according to their Geoclasses and Classes.
 
 {% admonition(type="note", title="Note") %}
-While the taxonomy includes five layers for asset classification, only three are utilized to set asset allocation: Geoclass, Class, and the asset itself.  The other layers provide guidance for allocation targets but are purely informative.  Consequently, I define my allocation based on these three layers, then observe the resulting allocation based on the remaining three layers (~~Subclass, Dimension, and~~ Sector), potentially making adjustments—such as increasing or decreasing investments in a sector, ~~adding or removing a dimension,~~ or incorporating more assets of a subclass.
+While the taxonomy includes five layers for asset classification, only three are utilized to set asset allocation: ~~Geoclass~~ Objective, Class, and the asset itself.  The other layers provide guidance for allocation targets but are purely informative.  Consequently, I define my allocation based on these three layers, then observe the resulting allocation based on the remaining three layers (~~Subclass, Dimension, and~~ Sector), potentially making adjustments—such as increasing or decreasing investments in a sector, ~~adding or removing a dimension,~~ or incorporating more assets of a subclass.
 {% end %}
 
 I opted for using percentages for higher categories (Geo and Class) and weights for assets, as defining percentages for a few items is simpler, whereas it becomes more complex for a larger set.  Should I choose to use percentages for assets, I'd need to alter nearly all percentages for assets in the same Geo/Class.  Additionally, by employing weights, I can establish personalized rules based on Geo/Class.  For instance, I might use a scale of 0-10 for Stocks in Brazil and 0-5 for ETFs in the US.
@@ -182,7 +184,7 @@ Lastly, this Sheet starts to **contextualize monetary values in terms of currenc
 Now, onto the technical details.  This spreadsheet comprises five tables:
 
 - Portfolio Overview
-- Geoclass Allocation
+- ~~Geoclass~~ Objective Allocation
 - Class Allocation
 - Subclasses Allocation
 - Asset Allocation
@@ -206,11 +208,11 @@ $$
 - **Unrealized Gain:** The difference between Market Value and Total Cost.
 - **Realized Gain:** The cumulative profit or loss from all sales.
 
-### Geoclass Allocation
-Here, you can set target allocations (in percentages) for each geographical location where you're investing, and monitor the current allocation.  This allows you to discern where to direct your efforts.
+### ~~Geoclass~~ Objective Allocation
+Here, you can set target allocations (in percentages) for each ~~geographical location where you're investing~~ objective set, and monitor the current allocation.  This allows you to discern where to direct your efforts.
 
 ### Class Allocation
-Similar to Geoclass, but focused on asset Classes.  Note that unlike Geoclass, each Class is linked to a Geoclass.  Consequently, you need to fill in all Classes for each Geoclass.
+Similar to ~~Geoclass~~ Objective, but focused on asset Classes.  Note that unlike ~~Geoclass~~, each Class is linked to ~~a Geoclass~~ an Objective.  Consequently, you need to fill in all Classes for each ~~Geoclass~~ Objective.
 
 {% admonition(type="tip", title="Pro Tip") %}
 Suppose you allocate 60% overall to the US.  Within the US, you might want to split those 60% into, for example, 90% for Stocks and 10% for REITs.  So, your allocation reads: Out of those 60%, I'll allocate 90% here and 10% there.
@@ -220,14 +222,14 @@ Suppose you allocate 60% overall to the US.  Within the US, you might want to sp
 This section provides supplementary data that proves valuable for fine-tuning allocation.  After defining all allocations, including Asset allocation (covered in the next section), this table aggregates target percentages based on Sectors, ~~Domains, Subclasses~~, and Currencies.  With this information, you can adjust values to more accurately represent your portfolio intentions.
 
 ### Asset Allocation
-This table takes center stage, as it's where you record each asset to construct your portfolio.  Properly classifying assets using Geoclass, Class, Subclass, Domain, Sector, and Currency, you can then assign a weight to each asset.  This is where the magic unfolds, as the spreadsheet undertakes the complex task of calculating your current situation, the desired scenario in terms of currency, and the necessary actions to achieve your objectives.  Here are the columns this table generates for your analysis:
+This table takes center stage, as it's where you record each asset to construct your portfolio.  Properly classifying assets using ~~Geoclass~~ Objective, Class, Subclass, Domain, Sector, and Currency, you can then assign a weight to each asset.  This is where the magic unfolds, as the spreadsheet undertakes the complex task of calculating your current situation, the desired scenario in terms of currency, and the necessary actions to achieve your objectives.  Here are the columns this table generates for your analysis:
 
-- **% Target Geo/Class:** The target percentage of the asset compared to others within the same Geoclass and Class (localized analysis).  This is calculated using the previously provided weight.
+- **% Target ~~Geo~~ Objective/Class:** The target percentage of the asset compared to others within the same ~~Geoclass~~ Objective and Class (localized analysis).  This is calculated using the previously provided weight.
 - **Action:** This field employs the Target Allocation (optimal allocation for each asset) and Market Value (current allocation of each asset) to determine the recommended action for each asset—whether to buy more shares, sell shares, or maintain the position.  This action is rooted in the Buy & Hold approach.
 - **Action $:** An extension of the previous value, indicating the amount of money required to attain the optimal scenario.
-- **Participation:** The current percentage of allocation for each asset across the entire portfolio (not confined to Geoclass and Class).
+- **Participation:** The current percentage of allocation for each asset across the entire portfolio (not confined to ~~Geoclass~~ Objective and Class).
 - **% Current Geo/Class:** Essentially the same as the above, but using current data (Last Price).
-- **Target Allocation:** Based on the portfolio's market value, available cash for investment, the percentage of that Geoclass, the percentage of that Class, and the % Target Geo/Class, this figure calculates the optimal monetary allocation for the asset.
+- **Target Allocation:** Based on the portfolio's market value, available cash for investment, the percentage of that ~~Geoclass~~ Objective, the percentage of that Class, and the % Target Geo/Class, this figure calculates the optimal monetary allocation for the asset.
 - **Position:** The quantity of shares held for each asset.
 - **Average Price:** The average price at which shares were acquired.
 - **Last Price:** The most recent traded price of each asset.
@@ -252,7 +254,7 @@ This spreadsheet employs the `=GoogleFinance()` formula to fetch the most recent
 As the name implies, the Summary Sheet consolidates all data from the Portfolio to offer a comprehensive overview of investments.  In this spreadsheet, all currency-related data is converted into the Default Currency to ensure accurate comparisons.  While numerous data visualizations could be generated with the information from other sheets, a primary principle of this project is simplicity for enhanced performance.  Bearing this in mind, I constructed three tables here:
 
 - **Top 10:** Enlists the top 10 gains, losses, contributors, and Yield on Cost.
-- **Geoclass Analysis:** Provides an overview of Geoclass allocations, encompassing:
+- **~~Geoclass~~ Objective Analysis:** Provides an overview of ~~Geoclass~~ Objective allocations, encompassing:
   - Cost
   - Market Value
   - Unrealized Gain
@@ -262,7 +264,7 @@ As the name implies, the Summary Sheet consolidates all data from the Portfolio 
   - Average Yield on Cost
   - Allocations by Classes, ~~Subclasses, Dimensions,~~ and Sectors.
 - **Portfolio History:** Chronicles the annual evolution of the portfolio.  This history proves crucial for assessing whether you're on the right path.
-- **Subcategory Analysis:** Tracks the Unrealized Gain per subcategory regardless the Geoclass.  The Subclass is avoided here because it is complementary to Class (which is present) and the lack of space solely.
+- **Subcategory Analysis:** Tracks the Unrealized Gain per subcategory regardless the ~~Geoclass~~ Objective.  The Subclass is avoided here because it is complementary to Class (which is present) and the lack of space solely.
 
 I refrained from generating charts with this data, as they tend to impact performance negatively.  Instead, I found it straightforward to analyze the data through dashboards.  Each piece of data presented here underwent a cost-benefit analysis to deliver the most valuable insights into portfolio health while minimizing any adverse impact on performance.
 
@@ -275,9 +277,9 @@ My introduction to the spreadsheet involved a reverse method: I began by opening
 
 Subsequently, I transformed my prior tracking system into a format compatible with the Ledger.  This required transferring historical trade data and income earnings to the Ledger while making manual adjustments as needed.  Although somewhat tedious, this step was essential to ensure the accuracy of asset allocation and avoid any inconsistencies.
 
-Transitioning to the Portfolio Sheet, I established target allocations for Geoclasses and each Class within those Geoclasses.  I meticulously added assets to the Asset Allocation table, assigning them appropriate classifications and weights based on how much I wanted them to contribute to my portfolio.
+Transitioning to the Portfolio Sheet, I established target allocations for ~~Geoclasses~~ Objectives and each Class within those ~~Geoclasses~~ Objectives.  I meticulously added assets to the Asset Allocation table, assigning them appropriate classifications and weights based on how much I wanted them to contribute to my portfolio.
 
-Lastly, I evaluated the set targets and made necessary adjustments to both percentages (Geoclass and Class allocations) and asset weights.  After confirming that the current values aligned with my goals and there were no inaccuracies from the Ledger, I moved on to the Summary Sheet.  Here, I reviewed the data displayed and manually entered historical portfolio information into the Portfolio History section to cover the past five years.
+Lastly, I evaluated the set targets and made necessary adjustments to both percentages (~~Geoclass~~ Objective and Class allocations) and asset weights.  After confirming that the current values aligned with my goals and there were no inaccuracies from the Ledger, I moved on to the Summary Sheet.  Here, I reviewed the data displayed and manually entered historical portfolio information into the Portfolio History section to cover the past five years.
 
 The initial setup process demands more effort and time due to the various actions required.  However, careful execution at this stage leads to time savings in the future and a heightened level of control over assets.
 
