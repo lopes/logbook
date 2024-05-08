@@ -10,6 +10,9 @@ tags = ["finance"]
 math = true
 +++
 
+{% admonition(type="failure", title="Deprecated") %}
+The Portfolio Tracker version showed here was deprecated in favor [of this one](https://docs.google.com/spreadsheets/d/1t74zQb31tufTZNpCdS2CkfEboHgqzjcXPSthOC8HA_M/edit?usp=sharing).  Although many parts of this post are present in the new version, you can read the new post [here](@/2024-portfolio-tracker-v4.md).
+{% end %}
 
 Regrettably, from my experience with software, I discovered that there was no effective solution to assist me in managing my portfolio.  This was due to either their high cost or their lack of utility.  I'm not interested in applications that merely display obvious information, such as the number of shares I hold for an asset.  I require more than that; I desire actionable information that can genuinely enhance my profits.
 
@@ -25,15 +28,15 @@ I initiated the process by clearly defining a list of requirements to guide the 
 - Simplicity is a key principle to eliminate extraneous data and improve performance.
 - Exclusively built-in formulas should be used within the spreadsheet to mitigate security concerns and optimize performance.
 - It should support multiple currencies, enabling worldwide investment tracking.
-- Asset classification should be possible based on factors such as geographic location and sector grouping.
+- Asset classification should be possible based on factors such as ~~geographic location~~ objective and sector grouping.
 
 Being an investor, I understand the significance of tracking assets, both for personal understanding and for tax purposes.
 
-- It should facilitate setting up targets for asset allocation, considering criteria like geographic location.
+- It should facilitate setting up targets for asset allocation, considering criteria like ~~geographic location~~ objective.
 - Current asset allocation needs to be monitored to enable users to compare against targets for further allocation decisions.
 - Text-based dashboards presenting pertinent information should be provided.  While charts are appealing, they tend to load slowly and compromise performance.
 - A single point for recording transactions and incomes is necessary.
-- A unified point to record management data, including geographic location, classes, sectors, and tickers, is essential for users to customize the spreadsheet.
+- A unified point to record management data, including ~~geographic location~~ objective, classes, sectors, and tickers, is essential for users to customize the spreadsheet.
 - Regarding colors, the spreadsheet must adhere to a specific palette, allowing users to modify only cells without background color.
 
 
@@ -167,13 +170,13 @@ The Pivots table aggregates summaries from both the Transactions and Incomes tab
 
 
 ## Portfolio
-The Portfolio Sheet consolidates both allocation and portfolio management capabilities.  Here, investors can establish target allocations as percentages based on ~~Geoclasses~~ Objectives and ~~Geoclass~~ Objective / Asset Classes.  After setting these targets, they can begin populating the portfolio with assets, categorizing them, and assigning weights that the spreadsheet will then convert into percentages according to their Geoclasses and Classes.
+The Portfolio Sheet consolidates both allocation and portfolio management capabilities.  Here, investors can establish target allocations as percentages based on ~~Geoclasses~~ Objectives and ~~Geoclass~~ Objective / Asset Classes.  After setting these targets, they can begin populating the portfolio with assets, categorizing them, and assigning weights that the spreadsheet will then convert into percentages according to their ~~Geoclasses~~ Objectives and Classes.
 
 {% admonition(type="note", title="Note") %}
 While the taxonomy includes five layers for asset classification, only three are utilized to set asset allocation: ~~Geoclass~~ Objective, Class, and the asset itself.  The other layers provide guidance for allocation targets but are purely informative.  Consequently, I define my allocation based on these three layers, then observe the resulting allocation based on the remaining three layers (~~Subclass, Dimension, and~~ Sector), potentially making adjustments—such as increasing or decreasing investments in a sector, ~~adding or removing a dimension,~~ or incorporating more assets of a subclass.
 {% end %}
 
-I opted for using percentages for higher categories (Geo and Class) and weights for assets, as defining percentages for a few items is simpler, whereas it becomes more complex for a larger set.  Should I choose to use percentages for assets, I'd need to alter nearly all percentages for assets in the same Geo/Class.  Additionally, by employing weights, I can establish personalized rules based on Geo/Class.  For instance, I might use a scale of 0-10 for Stocks in Brazil and 0-5 for ETFs in the US.
+I opted for using percentages for higher categories (~~Geo~~ Objective and Class) and weights for assets, as defining percentages for a few items is simpler, whereas it becomes more complex for a larger set.  Should I choose to use percentages for assets, I'd need to alter nearly all percentages for assets in the same ~~Geo~~ Objective/Class.  Additionally, by employing weights, I can establish personalized rules based on ~~Geo~~ Objective/Class.  For instance, I might use a scale of 0-10 for Stocks in Brazil and 0-5 for ETFs in the US.
 
 {% admonition(type="note", title="Note") %}
 Assigning a weight of zero (0) is applicable to assets in the portfolio that are no longer desired but haven't been sold yet.  For such assets, the spreadsheet will automatically mark them for sale, as their target allocation has become zero.
@@ -229,7 +232,7 @@ This table takes center stage, as it's where you record each asset to construct 
 - **Action $:** An extension of the previous value, indicating the amount of money required to attain the optimal scenario.
 - **Participation:** The current percentage of allocation for each asset across the entire portfolio (not confined to ~~Geoclass~~ Objective and Class).
 - **% Current Geo/Class:** Essentially the same as the above, but using current data (Last Price).
-- **Target Allocation:** Based on the portfolio's market value, available cash for investment, the percentage of that ~~Geoclass~~ Objective, the percentage of that Class, and the % Target Geo/Class, this figure calculates the optimal monetary allocation for the asset.
+- **Target Allocation:** Based on the portfolio's market value, available cash for investment, the percentage of that ~~Geoclass~~ Objective, the percentage of that Class, and the % Target ~~Geo~~ Objective/Class, this figure calculates the optimal monetary allocation for the asset.
 - **Position:** The quantity of shares held for each asset.
 - **Average Price:** The average price at which shares were acquired.
 - **Last Price:** The most recent traded price of each asset.
@@ -298,7 +301,7 @@ It's important to recognize that regularly adjusting allocations is natural and 
 
 
 ## Donations and Download
-If you find this spreadsheet beneficial and feel inclined to contribute, consider making a **donation** of any amount.  Rest assured, I will utilize each donated penny judiciously.  :)
+If you find this spreadsheet beneficial and feel inclined to contribute, consider making a **donation** of any amount.  Rest assured, I will utilize each donated penny judiciously.  😊
 
 You can find the donation button in the bottom-right corner of the Summary Sheet, or you can use [THIS LINK](https://www.paypal.com/donate/?hosted_button_id=2W2ALYSGHTDTU).  Your recognition and support are greatly appreciated!
 
