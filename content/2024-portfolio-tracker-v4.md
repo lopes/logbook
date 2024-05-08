@@ -1,6 +1,6 @@
 +++
 title = "Portfolio Tracker v4"
-date  = 2024-05-09
+date  = 2024-05-08
 description = "Revamped my Portfolio Tracker with multi-wallet support and improved allocation."
 
 [taxonomies]
