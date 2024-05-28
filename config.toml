@@ -1,7 +1,7 @@
 base_url = "https://lopes.id"
 theme    = "kita"
 
-title       = "Lopes' Logbook"
+title       = "Lopes Logbook"
 description = "Chronicles of my cyber yamadori journey."
 author      = "Joe Lopes"
 
@@ -21,6 +21,10 @@ taxonomies = [
 highlight_code  = true
 highlight_theme = "base16-ocean-dark"
 extra_syntaxes_and_themes = []
+
+
+[extra]
+social_image = "./images/avatar-lopes.png"
 
 
 [extra.style]

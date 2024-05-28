@@ -1,5 +1,5 @@
-# logbook
-Lopes' Logbook, home for [lopes.id](https://lopes.id).  Proudly built with [Zola](https://www.getzola.org/) and hosted on [Netlify](https://www.netlify.com/).
+# Logbook
+Lopes Logbook, home for [lopes.id](https://lopes.id).  Professional, factual, objective, and systematic content, used for accurate record-keeping in professional and legal contexts.  Proudly built with [Zola](https://www.getzola.org/) and hosted on [Netlify](https://www.netlify.com/).
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1e2af009-2a44-4144-a435-1f032fd6c1f8/deploy-status)](https://app.netlify.com/sites/lopes/deploys)
 
