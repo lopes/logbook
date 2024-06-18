@@ -1,5 +1,5 @@
 base_url = "https://lopes.id"
-theme    = "kita"
+theme    = "kati"
 
 title       = "Lopes Logbook"
 description = "Chronicles of my cyber yamadori journey."
@@ -24,7 +24,8 @@ extra_syntaxes_and_themes = []
 
 
 [extra]
-social_image = "./images/avatar-lopes.png"
+social_image    = "./images/avatar-lopes.png"
+simpleanalytics = true  # simpleanalytics.com support
 
 
 [extra.style]
@@ -77,3 +78,4 @@ url  = "$BASE_URL/about"
 since       = 2020
 license     = "CC BY-SA 4.0"
 license_url = "https://creativecommons.org/licenses/by-sa/4.0/deed"
+disclaimer  = "Privacy respected with GDPR-compliant cookies. All content is human-written."
